@@ -1,0 +1,501 @@
+review_id,case_id,reviewer_role,reviewed_at,decision,confidence,reason,evidence_completeness
+REV-0001,CASE-0001,Case Reviewer,2026-09-03T23:58:00,CLEAR,0.95,"Complete concordant evidence across imaging, cytology, and negative viral PCR. Routine follow-up in 12 months.",100.0
+REV-0002,CASE-0002,Case Reviewer,2026-09-02T21:38:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0003,CASE-0003,Case Reviewer,2026-09-05T00:14:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0004,CASE-0004,Case Reviewer,2026-07-24T03:42:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0005,CASE-0005,Case Reviewer,2026-09-05T01:54:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0006,CASE-0006,Case Reviewer,2026-09-04T22:41:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0007,CASE-0007,Case Reviewer,2026-08-12T01:44:00,REFER,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0008,CASE-0008,Case Reviewer,2026-09-03T22:55:00,REFER,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0009,CASE-0009,Case Reviewer,2026-08-26T22:48:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0010,CASE-0010,Case Reviewer,2026-08-17T14:15:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0011,CASE-0011,Case Reviewer,2026-07-24T19:44:00,REVIEW_REQUIRED,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0012,CASE-0012,Case Reviewer,2026-08-30T20:43:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0013,CASE-0013,Case Reviewer,2026-08-30T01:03:00,REFER,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0014,CASE-0014,Case Reviewer,2026-08-14T14:08:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0015,CASE-0015,Case Reviewer,2026-07-26T19:34:00,CLEAR,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0016,CASE-0016,Case Reviewer,2026-08-16T20:40:00,REVIEW_REQUIRED,0.84,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0017,CASE-0017,Case Reviewer,2026-07-25T22:38:00,REFER,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0018,CASE-0018,Case Reviewer,2026-08-29T01:51:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0019,CASE-0019,Case Reviewer,2026-08-22T03:15:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0020,CASE-0020,Case Reviewer,2026-07-28T02:28:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0021,CASE-0021,Case Reviewer,2026-08-21T13:39:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0022,CASE-0022,Case Reviewer,2026-08-11T22:21:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0023,CASE-0023,Case Reviewer,2026-08-30T20:18:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0024,CASE-0024,Case Reviewer,2026-07-18T14:23:00,CLEAR,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0025,CASE-0025,Case Reviewer,2026-08-09T23:40:00,REVIEW_REQUIRED,0.75,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0026,CASE-0026,Case Reviewer,2026-09-04T14:51:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0027,CASE-0027,Case Reviewer,2026-08-29T12:11:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0028,CASE-0028,Case Reviewer,2026-08-25T01:33:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0029,CASE-0029,Case Reviewer,2026-07-20T15:01:00,INSUFFICIENT_EVIDENCE,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0030,CASE-0030,Case Reviewer,2026-08-23T17:32:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0031,CASE-0031,Case Reviewer,2026-09-03T21:30:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0032,CASE-0032,Case Reviewer,2026-07-31T00:54:00,REVIEW_REQUIRED,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0033,CASE-0033,Case Reviewer,2026-07-30T19:04:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0034,CASE-0034,Case Reviewer,2026-08-03T20:38:00,INSUFFICIENT_EVIDENCE,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0035,CASE-0035,Case Reviewer,2026-07-19T01:31:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0036,CASE-0036,Case Reviewer,2026-08-12T20:40:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0037,CASE-0037,Case Reviewer,2026-08-13T02:19:00,CLEAR,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0038,CASE-0038,Case Reviewer,2026-09-01T19:11:00,INSUFFICIENT_EVIDENCE,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0039,CASE-0039,Case Reviewer,2026-09-04T02:40:00,REVIEW_REQUIRED,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0040,CASE-0040,Case Reviewer,2026-07-24T16:56:00,REFER,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0041,CASE-0041,Case Reviewer,2026-08-20T18:39:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0042,CASE-0042,Case Reviewer,2026-08-06T19:32:00,INSUFFICIENT_EVIDENCE,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0043,CASE-0043,Case Reviewer,2026-07-21T04:39:00,REVIEW_REQUIRED,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0044,CASE-0044,Case Reviewer,2026-08-15T08:23:00,CLEAR,0.75,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0045,CASE-0045,Case Reviewer,2026-08-25T19:17:00,INSUFFICIENT_EVIDENCE,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0046,CASE-0046,Case Reviewer,2026-08-21T19:52:00,REVIEW_REQUIRED,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0047,CASE-0047,Case Reviewer,2026-07-19T03:32:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0048,CASE-0048,Case Reviewer,2026-08-27T00:27:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0049,CASE-0049,Case Reviewer,2026-07-25T22:39:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0050,CASE-0050,Case Reviewer,2026-08-04T20:50:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0051,CASE-0051,Case Reviewer,2026-07-30T02:01:00,REFER,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0052,CASE-0052,Case Reviewer,2026-08-18T05:27:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0053,CASE-0053,Case Reviewer,2026-08-11T22:26:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0054,CASE-0054,Case Reviewer,2026-09-04T20:56:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0055,CASE-0055,Case Reviewer,2026-09-05T01:58:00,REVIEW_REQUIRED,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0056,CASE-0056,Case Reviewer,2026-08-01T19:27:00,REFER,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0057,CASE-0057,Case Reviewer,2026-08-30T18:57:00,INSUFFICIENT_EVIDENCE,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0058,CASE-0058,Case Reviewer,2026-08-13T23:42:00,REVIEW_REQUIRED,0.84,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0059,CASE-0059,Case Reviewer,2026-07-18T21:58:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0060,CASE-0060,Case Reviewer,2026-07-27T01:44:00,REVIEW_REQUIRED,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0061,CASE-0061,Case Reviewer,2026-08-26T21:09:00,CLEAR,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0062,CASE-0062,Case Reviewer,2026-07-22T16:37:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0063,CASE-0063,Case Reviewer,2026-07-28T20:50:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0064,CASE-0064,Case Reviewer,2026-08-31T01:49:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0065,CASE-0065,Case Reviewer,2026-08-08T23:04:00,REVIEW_REQUIRED,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0066,CASE-0066,Case Reviewer,2026-07-19T17:36:00,CLEAR,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0067,CASE-0067,Case Reviewer,2026-07-22T05:08:00,REVIEW_REQUIRED,0.92,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0068,CASE-0068,Case Reviewer,2026-07-21T05:21:00,INSUFFICIENT_EVIDENCE,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0069,CASE-0069,Case Reviewer,2026-08-24T22:01:00,REFER,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0070,CASE-0070,Case Reviewer,2026-08-17T03:37:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0071,CASE-0071,Case Reviewer,2026-08-24T20:18:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0072,CASE-0072,Case Reviewer,2026-08-07T18:26:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0073,CASE-0073,Case Reviewer,2026-08-24T18:29:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0074,CASE-0074,Case Reviewer,2026-07-28T01:36:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0075,CASE-0075,Case Reviewer,2026-08-03T20:23:00,CLEAR,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0076,CASE-0076,Case Reviewer,2026-08-13T01:25:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0077,CASE-0077,Case Reviewer,2026-08-17T11:16:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0078,CASE-0078,Case Reviewer,2026-08-03T00:11:00,INSUFFICIENT_EVIDENCE,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0079,CASE-0079,Case Reviewer,2026-08-16T17:48:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0080,CASE-0080,Case Reviewer,2026-07-18T16:13:00,INSUFFICIENT_EVIDENCE,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0081,CASE-0081,Case Reviewer,2026-08-16T04:36:00,CLEAR,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0082,CASE-0082,Case Reviewer,2026-09-01T04:11:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0083,CASE-0083,Case Reviewer,2026-07-27T00:43:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0084,CASE-0084,Case Reviewer,2026-07-24T20:23:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0085,CASE-0085,Case Reviewer,2026-07-22T19:38:00,CLEAR,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0086,CASE-0086,Case Reviewer,2026-08-13T03:12:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0087,CASE-0087,Case Reviewer,2026-09-04T17:33:00,INSUFFICIENT_EVIDENCE,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0088,CASE-0088,Case Reviewer,2026-07-26T21:08:00,REFER,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0089,CASE-0089,Case Reviewer,2026-08-01T22:16:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0090,CASE-0090,Case Reviewer,2026-08-14T00:21:00,REFER,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0091,CASE-0091,Case Reviewer,2026-09-02T16:53:00,REFER,0.84,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0092,CASE-0092,Case Reviewer,2026-08-01T22:38:00,INSUFFICIENT_EVIDENCE,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0093,CASE-0093,Case Reviewer,2026-07-25T18:21:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0094,CASE-0094,Case Reviewer,2026-08-03T23:33:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0095,CASE-0095,Case Reviewer,2026-08-04T03:54:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0096,CASE-0096,Case Reviewer,2026-08-30T22:40:00,REVIEW_REQUIRED,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0097,CASE-0097,Case Reviewer,2026-08-04T05:51:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0098,CASE-0098,Case Reviewer,2026-08-03T22:15:00,INSUFFICIENT_EVIDENCE,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0099,CASE-0099,Case Reviewer,2026-08-24T13:30:00,REVIEW_REQUIRED,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0100,CASE-0100,Case Reviewer,2026-08-10T00:29:00,INSUFFICIENT_EVIDENCE,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0101,CASE-0101,Case Reviewer,2026-08-07T21:09:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0102,CASE-0102,Case Reviewer,2026-08-15T03:35:00,REFER,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0103,CASE-0103,Case Reviewer,2026-08-11T16:19:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0104,CASE-0104,Case Reviewer,2026-08-13T21:12:00,REFER,0.75,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0105,CASE-0105,Case Reviewer,2026-09-02T19:08:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0106,CASE-0106,Case Reviewer,2026-07-31T18:59:00,CLEAR,0.76,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0107,CASE-0107,Case Reviewer,2026-08-21T16:28:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0108,CASE-0108,Case Reviewer,2026-08-20T01:08:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0109,CASE-0109,Case Reviewer,2026-09-01T20:06:00,INSUFFICIENT_EVIDENCE,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0110,CASE-0110,Case Reviewer,2026-07-27T00:22:00,REVIEW_REQUIRED,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0111,CASE-0111,Case Reviewer,2026-08-27T05:20:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0112,CASE-0112,Case Reviewer,2026-08-24T06:39:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0113,CASE-0113,Case Reviewer,2026-09-03T20:23:00,INSUFFICIENT_EVIDENCE,0.86,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0114,CASE-0114,Case Reviewer,2026-08-15T18:39:00,CLEAR,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0115,CASE-0115,Case Reviewer,2026-08-25T18:12:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0116,CASE-0116,Case Reviewer,2026-07-31T18:53:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0117,CASE-0117,Case Reviewer,2026-08-07T18:21:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0118,CASE-0118,Case Reviewer,2026-08-23T01:19:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0119,CASE-0119,Case Reviewer,2026-07-31T18:11:00,REVIEW_REQUIRED,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0120,CASE-0120,Case Reviewer,2026-09-01T07:35:00,INSUFFICIENT_EVIDENCE,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0121,CASE-0121,Case Reviewer,2026-08-16T01:56:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0122,CASE-0122,Case Reviewer,2026-07-18T17:04:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0123,CASE-0123,Case Reviewer,2026-08-21T19:28:00,CLEAR,0.76,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0124,CASE-0124,Case Reviewer,2026-07-28T20:14:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0125,CASE-0125,Case Reviewer,2026-08-25T04:26:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0126,CASE-0126,Case Reviewer,2026-08-25T04:53:00,REVIEW_REQUIRED,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0127,CASE-0127,Case Reviewer,2026-08-25T20:47:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0128,CASE-0128,Case Reviewer,2026-09-03T17:47:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0129,CASE-0129,Case Reviewer,2026-08-14T22:49:00,REVIEW_REQUIRED,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0130,CASE-0130,Case Reviewer,2026-08-26T00:15:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0131,CASE-0131,Case Reviewer,2026-08-25T23:24:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0132,CASE-0132,Case Reviewer,2026-07-23T16:32:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0133,CASE-0133,Case Reviewer,2026-07-21T01:05:00,CLEAR,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0134,CASE-0134,Case Reviewer,2026-07-19T20:29:00,CLEAR,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0135,CASE-0135,Case Reviewer,2026-08-07T20:52:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0136,CASE-0136,Case Reviewer,2026-08-28T01:11:00,CLEAR,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0137,CASE-0137,Case Reviewer,2026-09-03T18:52:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0138,CASE-0138,Case Reviewer,2026-07-30T03:42:00,INSUFFICIENT_EVIDENCE,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0139,CASE-0139,Case Reviewer,2026-08-02T23:03:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0140,CASE-0140,Case Reviewer,2026-07-22T22:04:00,CLEAR,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0141,CASE-0141,Case Reviewer,2026-08-10T04:24:00,INSUFFICIENT_EVIDENCE,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0142,CASE-0142,Case Reviewer,2026-08-23T03:17:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0143,CASE-0143,Case Reviewer,2026-08-11T19:08:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0144,CASE-0144,Case Reviewer,2026-09-02T16:14:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0145,CASE-0145,Case Reviewer,2026-09-03T01:37:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0146,CASE-0146,Case Reviewer,2026-09-05T11:21:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0147,CASE-0147,Case Reviewer,2026-08-20T01:47:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0148,CASE-0148,Case Reviewer,2026-07-20T18:42:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0149,CASE-0149,Case Reviewer,2026-09-01T14:43:00,REFER,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0150,CASE-0150,Case Reviewer,2026-08-23T02:43:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0151,CASE-0151,Case Reviewer,2026-08-01T17:35:00,INSUFFICIENT_EVIDENCE,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0152,CASE-0152,Case Reviewer,2026-08-04T20:22:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0153,CASE-0153,Case Reviewer,2026-08-23T03:21:00,CLEAR,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0154,CASE-0154,Case Reviewer,2026-07-24T16:26:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0155,CASE-0155,Case Reviewer,2026-07-30T22:52:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0156,CASE-0156,Case Reviewer,2026-07-31T18:10:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0157,CASE-0157,Case Reviewer,2026-08-29T18:57:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0158,CASE-0158,Case Reviewer,2026-07-26T07:49:00,CLEAR,0.86,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0159,CASE-0159,Case Reviewer,2026-08-02T19:38:00,CLEAR,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0160,CASE-0160,Case Reviewer,2026-08-18T22:41:00,CLEAR,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0161,CASE-0161,Case Reviewer,2026-08-02T02:05:00,INSUFFICIENT_EVIDENCE,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0162,CASE-0162,Case Reviewer,2026-09-05T01:16:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0163,CASE-0163,Case Reviewer,2026-08-19T21:48:00,REFER,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0164,CASE-0164,Case Reviewer,2026-08-20T01:06:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0165,CASE-0165,Case Reviewer,2026-08-31T20:20:00,REFER,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0166,CASE-0166,Case Reviewer,2026-08-26T19:17:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0167,CASE-0167,Case Reviewer,2026-08-21T02:31:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0168,CASE-0168,Case Reviewer,2026-08-05T19:45:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0169,CASE-0169,Case Reviewer,2026-08-24T22:03:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0170,CASE-0170,Case Reviewer,2026-08-17T00:19:00,CLEAR,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0171,CASE-0171,Case Reviewer,2026-07-19T20:56:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0172,CASE-0172,Case Reviewer,2026-07-25T23:12:00,INSUFFICIENT_EVIDENCE,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0173,CASE-0173,Case Reviewer,2026-07-29T00:11:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0174,CASE-0174,Case Reviewer,2026-08-25T20:37:00,INSUFFICIENT_EVIDENCE,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0175,CASE-0175,Case Reviewer,2026-08-26T19:41:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0176,CASE-0176,Case Reviewer,2026-07-24T19:03:00,INSUFFICIENT_EVIDENCE,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0177,CASE-0177,Case Reviewer,2026-07-25T21:37:00,CLEAR,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0178,CASE-0178,Case Reviewer,2026-08-18T13:58:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0179,CASE-0179,Case Reviewer,2026-07-19T16:09:00,REFER,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0180,CASE-0180,Case Reviewer,2026-07-23T00:31:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0181,CASE-0181,Case Reviewer,2026-08-22T18:20:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0182,CASE-0182,Case Reviewer,2026-08-29T05:44:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0183,CASE-0183,Case Reviewer,2026-08-20T01:30:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0184,CASE-0184,Case Reviewer,2026-09-02T04:26:00,REFER,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0185,CASE-0185,Case Reviewer,2026-08-01T00:32:00,REVIEW_REQUIRED,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0186,CASE-0186,Case Reviewer,2026-08-09T23:40:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0187,CASE-0187,Case Reviewer,2026-08-11T18:29:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0188,CASE-0188,Case Reviewer,2026-08-10T20:12:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0189,CASE-0189,Case Reviewer,2026-08-27T20:06:00,INSUFFICIENT_EVIDENCE,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0190,CASE-0190,Case Reviewer,2026-08-02T18:49:00,CLEAR,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0191,CASE-0191,Case Reviewer,2026-08-05T20:46:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0192,CASE-0192,Case Reviewer,2026-08-08T23:49:00,CLEAR,0.86,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0193,CASE-0193,Case Reviewer,2026-07-25T16:54:00,REVIEW_REQUIRED,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0194,CASE-0194,Case Reviewer,2026-07-26T04:59:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0195,CASE-0195,Case Reviewer,2026-07-21T03:06:00,REVIEW_REQUIRED,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0196,CASE-0196,Case Reviewer,2026-08-16T02:26:00,CLEAR,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0197,CASE-0197,Case Reviewer,2026-07-27T22:38:00,REVIEW_REQUIRED,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0198,CASE-0198,Case Reviewer,2026-07-21T01:23:00,REVIEW_REQUIRED,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0199,CASE-0199,Case Reviewer,2026-07-22T21:29:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0200,CASE-0200,Case Reviewer,2026-08-07T22:22:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0201,CASE-0201,Case Reviewer,2026-08-30T13:48:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0202,CASE-0202,Case Reviewer,2026-08-23T18:40:00,REFER,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0203,CASE-0203,Case Reviewer,2026-08-23T15:35:00,INSUFFICIENT_EVIDENCE,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0204,CASE-0204,Case Reviewer,2026-08-24T23:21:00,REVIEW_REQUIRED,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0205,CASE-0205,Case Reviewer,2026-08-14T23:10:00,CLEAR,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0206,CASE-0206,Case Reviewer,2026-08-29T23:27:00,INSUFFICIENT_EVIDENCE,0.77,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0207,CASE-0207,Case Reviewer,2026-08-08T04:46:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0208,CASE-0208,Case Reviewer,2026-07-28T01:05:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0209,CASE-0209,Case Reviewer,2026-08-14T22:13:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0210,CASE-0210,Case Reviewer,2026-08-10T01:43:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0211,CASE-0211,Case Reviewer,2026-07-26T22:01:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0212,CASE-0212,Case Reviewer,2026-08-07T21:05:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0213,CASE-0213,Case Reviewer,2026-08-23T20:57:00,REVIEW_REQUIRED,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0214,CASE-0214,Case Reviewer,2026-07-20T20:34:00,INSUFFICIENT_EVIDENCE,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0215,CASE-0215,Case Reviewer,2026-07-26T21:55:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0216,CASE-0216,Case Reviewer,2026-09-02T20:53:00,REVIEW_REQUIRED,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0217,CASE-0217,Case Reviewer,2026-09-03T21:44:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0218,CASE-0218,Case Reviewer,2026-08-16T21:32:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0219,CASE-0219,Case Reviewer,2026-08-29T02:12:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0220,CASE-0220,Case Reviewer,2026-09-01T23:51:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0221,CASE-0221,Case Reviewer,2026-08-07T21:45:00,CLEAR,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0222,CASE-0222,Case Reviewer,2026-08-07T23:04:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0223,CASE-0223,Case Reviewer,2026-08-07T18:57:00,CLEAR,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0224,CASE-0224,Case Reviewer,2026-07-31T15:02:00,INSUFFICIENT_EVIDENCE,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0225,CASE-0225,Case Reviewer,2026-07-26T03:41:00,REVIEW_REQUIRED,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0226,CASE-0226,Case Reviewer,2026-08-25T13:49:00,CLEAR,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0227,CASE-0227,Case Reviewer,2026-08-09T19:10:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0228,CASE-0228,Case Reviewer,2026-08-10T16:06:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0229,CASE-0229,Case Reviewer,2026-08-12T03:14:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0230,CASE-0230,Case Reviewer,2026-08-16T21:04:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0231,CASE-0231,Case Reviewer,2026-08-17T00:52:00,REFER,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0232,CASE-0232,Case Reviewer,2026-09-02T21:36:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0233,CASE-0233,Case Reviewer,2026-08-27T11:41:00,CLEAR,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0234,CASE-0234,Case Reviewer,2026-08-29T19:51:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0235,CASE-0235,Case Reviewer,2026-09-05T02:50:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0236,CASE-0236,Case Reviewer,2026-08-23T21:35:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0237,CASE-0237,Case Reviewer,2026-07-18T22:16:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0238,CASE-0238,Case Reviewer,2026-07-28T18:52:00,CLEAR,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0239,CASE-0239,Case Reviewer,2026-08-11T17:16:00,CLEAR,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0240,CASE-0240,Case Reviewer,2026-08-01T02:03:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0241,CASE-0241,Case Reviewer,2026-08-14T11:58:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0242,CASE-0242,Case Reviewer,2026-07-22T21:22:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0243,CASE-0243,Case Reviewer,2026-09-01T04:23:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0244,CASE-0244,Case Reviewer,2026-08-02T16:17:00,INSUFFICIENT_EVIDENCE,0.77,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0245,CASE-0245,Case Reviewer,2026-08-17T20:43:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0246,CASE-0246,Case Reviewer,2026-09-05T07:04:00,INSUFFICIENT_EVIDENCE,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0247,CASE-0247,Case Reviewer,2026-07-18T21:32:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0248,CASE-0248,Case Reviewer,2026-07-22T22:43:00,INSUFFICIENT_EVIDENCE,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0249,CASE-0249,Case Reviewer,2026-08-15T18:03:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0250,CASE-0250,Case Reviewer,2026-08-24T23:26:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0251,CASE-0251,Case Reviewer,2026-08-22T21:15:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0252,CASE-0252,Case Reviewer,2026-08-07T21:21:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0253,CASE-0253,Case Reviewer,2026-08-18T21:53:00,INSUFFICIENT_EVIDENCE,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0254,CASE-0254,Case Reviewer,2026-08-28T01:57:00,INSUFFICIENT_EVIDENCE,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0255,CASE-0255,Case Reviewer,2026-08-04T00:31:00,REVIEW_REQUIRED,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0256,CASE-0256,Case Reviewer,2026-07-23T02:34:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0257,CASE-0257,Case Reviewer,2026-08-11T03:34:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0258,CASE-0258,Case Reviewer,2026-08-04T21:28:00,REFER,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0259,CASE-0259,Case Reviewer,2026-07-23T01:06:00,INSUFFICIENT_EVIDENCE,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0260,CASE-0260,Case Reviewer,2026-08-15T22:22:00,REVIEW_REQUIRED,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0261,CASE-0261,Case Reviewer,2026-07-22T00:08:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0262,CASE-0262,Case Reviewer,2026-08-05T07:04:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0263,CASE-0263,Case Reviewer,2026-08-04T07:32:00,INSUFFICIENT_EVIDENCE,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0264,CASE-0264,Case Reviewer,2026-07-24T23:09:00,CLEAR,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0265,CASE-0265,Case Reviewer,2026-08-15T16:52:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0266,CASE-0266,Case Reviewer,2026-08-22T00:49:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0267,CASE-0267,Case Reviewer,2026-08-08T19:51:00,REVIEW_REQUIRED,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0268,CASE-0268,Case Reviewer,2026-08-14T21:59:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0269,CASE-0269,Case Reviewer,2026-07-19T22:58:00,REVIEW_REQUIRED,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0270,CASE-0270,Case Reviewer,2026-07-22T20:16:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0271,CASE-0271,Case Reviewer,2026-07-21T21:07:00,INSUFFICIENT_EVIDENCE,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0272,CASE-0272,Case Reviewer,2026-08-27T04:09:00,REFER,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0273,CASE-0273,Case Reviewer,2026-08-15T01:08:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0274,CASE-0274,Case Reviewer,2026-08-24T04:42:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0275,CASE-0275,Case Reviewer,2026-08-09T18:56:00,CLEAR,0.77,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0276,CASE-0276,Case Reviewer,2026-08-02T02:40:00,REVIEW_REQUIRED,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0277,CASE-0277,Case Reviewer,2026-07-19T16:23:00,INSUFFICIENT_EVIDENCE,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0278,CASE-0278,Case Reviewer,2026-09-04T04:33:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0279,CASE-0279,Case Reviewer,2026-08-13T22:31:00,REFER,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0280,CASE-0280,Case Reviewer,2026-08-27T02:51:00,CLEAR,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0281,CASE-0281,Case Reviewer,2026-08-08T16:31:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0282,CASE-0282,Case Reviewer,2026-08-13T13:09:00,CLEAR,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0283,CASE-0283,Case Reviewer,2026-08-06T16:03:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0284,CASE-0284,Case Reviewer,2026-08-07T19:18:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0285,CASE-0285,Case Reviewer,2026-08-24T18:15:00,CLEAR,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0286,CASE-0286,Case Reviewer,2026-09-02T15:52:00,REVIEW_REQUIRED,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0287,CASE-0287,Case Reviewer,2026-08-15T22:44:00,REFER,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0288,CASE-0288,Case Reviewer,2026-07-28T18:46:00,REFER,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0289,CASE-0289,Case Reviewer,2026-08-11T22:24:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0290,CASE-0290,Case Reviewer,2026-08-03T17:25:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0291,CASE-0291,Case Reviewer,2026-07-30T01:29:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0292,CASE-0292,Case Reviewer,2026-08-04T04:38:00,INSUFFICIENT_EVIDENCE,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0293,CASE-0293,Case Reviewer,2026-08-17T04:49:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0294,CASE-0294,Case Reviewer,2026-08-11T01:12:00,REVIEW_REQUIRED,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0295,CASE-0295,Case Reviewer,2026-07-22T15:34:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0296,CASE-0296,Case Reviewer,2026-08-13T01:11:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0297,CASE-0297,Case Reviewer,2026-08-04T16:55:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0298,CASE-0298,Case Reviewer,2026-07-22T13:46:00,CLEAR,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0299,CASE-0299,Case Reviewer,2026-08-30T18:39:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0300,CASE-0300,Case Reviewer,2026-07-27T16:53:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0301,CASE-0301,Case Reviewer,2026-08-04T19:47:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0302,CASE-0302,Case Reviewer,2026-07-27T20:26:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0303,CASE-0303,Case Reviewer,2026-08-26T05:44:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0304,CASE-0304,Case Reviewer,2026-08-26T22:13:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0305,CASE-0305,Case Reviewer,2026-08-25T18:11:00,CLEAR,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0306,CASE-0306,Case Reviewer,2026-08-12T18:14:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0307,CASE-0307,Case Reviewer,2026-08-31T16:26:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0308,CASE-0308,Case Reviewer,2026-09-01T02:54:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0309,CASE-0309,Case Reviewer,2026-08-15T00:16:00,INSUFFICIENT_EVIDENCE,0.77,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0310,CASE-0310,Case Reviewer,2026-08-03T21:12:00,REFER,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0311,CASE-0311,Case Reviewer,2026-07-24T19:53:00,CLEAR,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0312,CASE-0312,Case Reviewer,2026-07-19T17:47:00,INSUFFICIENT_EVIDENCE,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0313,CASE-0313,Case Reviewer,2026-08-17T21:12:00,INSUFFICIENT_EVIDENCE,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0314,CASE-0314,Case Reviewer,2026-07-19T16:34:00,REVIEW_REQUIRED,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0315,CASE-0315,Case Reviewer,2026-07-29T19:16:00,INSUFFICIENT_EVIDENCE,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0316,CASE-0316,Case Reviewer,2026-07-25T20:42:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0317,CASE-0317,Case Reviewer,2026-07-21T19:34:00,REVIEW_REQUIRED,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0318,CASE-0318,Case Reviewer,2026-07-31T22:32:00,REVIEW_REQUIRED,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0319,CASE-0319,Case Reviewer,2026-07-27T01:55:00,REFER,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0320,CASE-0320,Case Reviewer,2026-08-27T16:52:00,REVIEW_REQUIRED,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0321,CASE-0321,Case Reviewer,2026-07-30T05:02:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0322,CASE-0322,Case Reviewer,2026-08-23T18:37:00,REFER,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0323,CASE-0323,Case Reviewer,2026-08-03T17:15:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0324,CASE-0324,Case Reviewer,2026-08-29T18:01:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0325,CASE-0325,Case Reviewer,2026-08-03T04:33:00,REVIEW_REQUIRED,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0326,CASE-0326,Case Reviewer,2026-08-09T23:12:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0327,CASE-0327,Case Reviewer,2026-09-01T22:32:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0328,CASE-0328,Case Reviewer,2026-08-22T00:51:00,REFER,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0329,CASE-0329,Case Reviewer,2026-09-02T04:46:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0330,CASE-0330,Case Reviewer,2026-08-10T21:03:00,INSUFFICIENT_EVIDENCE,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0331,CASE-0331,Case Reviewer,2026-08-05T05:49:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0332,CASE-0332,Case Reviewer,2026-09-05T21:23:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0333,CASE-0333,Case Reviewer,2026-09-04T23:19:00,REFER,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0334,CASE-0334,Case Reviewer,2026-08-22T20:42:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0335,CASE-0335,Case Reviewer,2026-07-22T08:47:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0336,CASE-0336,Case Reviewer,2026-07-31T19:05:00,CLEAR,0.84,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0337,CASE-0337,Case Reviewer,2026-08-27T23:53:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0338,CASE-0338,Case Reviewer,2026-07-27T06:39:00,INSUFFICIENT_EVIDENCE,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0339,CASE-0339,Case Reviewer,2026-08-22T21:54:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0340,CASE-0340,Case Reviewer,2026-08-29T22:35:00,REVIEW_REQUIRED,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0341,CASE-0341,Case Reviewer,2026-09-01T20:21:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0342,CASE-0342,Case Reviewer,2026-08-20T17:48:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0343,CASE-0343,Case Reviewer,2026-07-29T00:11:00,REVIEW_REQUIRED,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0344,CASE-0344,Case Reviewer,2026-07-20T16:53:00,INSUFFICIENT_EVIDENCE,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0345,CASE-0345,Case Reviewer,2026-07-21T18:44:00,REVIEW_REQUIRED,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0346,CASE-0346,Case Reviewer,2026-08-09T00:52:00,REVIEW_REQUIRED,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0347,CASE-0347,Case Reviewer,2026-07-31T19:05:00,INSUFFICIENT_EVIDENCE,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0348,CASE-0348,Case Reviewer,2026-08-22T15:23:00,REFER,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0349,CASE-0349,Case Reviewer,2026-08-30T19:38:00,INSUFFICIENT_EVIDENCE,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0350,CASE-0350,Case Reviewer,2026-07-30T04:57:00,REFER,0.85,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0351,CASE-0351,Case Reviewer,2026-08-26T19:32:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0352,CASE-0352,Case Reviewer,2026-07-31T23:52:00,REVIEW_REQUIRED,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0353,CASE-0353,Case Reviewer,2026-07-29T16:44:00,CLEAR,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0354,CASE-0354,Case Reviewer,2026-08-07T22:19:00,CLEAR,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0355,CASE-0355,Case Reviewer,2026-07-28T23:53:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0356,CASE-0356,Case Reviewer,2026-08-17T02:02:00,REVIEW_REQUIRED,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0357,CASE-0357,Case Reviewer,2026-08-25T05:37:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0358,CASE-0358,Case Reviewer,2026-07-21T01:07:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0359,CASE-0359,Case Reviewer,2026-08-09T23:37:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0360,CASE-0360,Case Reviewer,2026-08-29T19:42:00,REFER,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0361,CASE-0361,Case Reviewer,2026-08-10T23:02:00,CLEAR,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0362,CASE-0362,Case Reviewer,2026-07-21T23:45:00,INSUFFICIENT_EVIDENCE,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0363,CASE-0363,Case Reviewer,2026-08-02T14:44:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0364,CASE-0364,Case Reviewer,2026-08-03T21:38:00,REFER,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0365,CASE-0365,Case Reviewer,2026-08-06T23:42:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0366,CASE-0366,Case Reviewer,2026-08-28T21:52:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0367,CASE-0367,Case Reviewer,2026-08-04T12:29:00,CLEAR,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0368,CASE-0368,Case Reviewer,2026-08-01T00:06:00,REFER,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0369,CASE-0369,Case Reviewer,2026-08-26T21:28:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0370,CASE-0370,Case Reviewer,2026-08-08T17:23:00,REFER,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0371,CASE-0371,Case Reviewer,2026-08-17T18:17:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0372,CASE-0372,Case Reviewer,2026-08-28T03:43:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0373,CASE-0373,Case Reviewer,2026-09-03T19:54:00,CLEAR,0.9,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0374,CASE-0374,Case Reviewer,2026-08-01T21:24:00,INSUFFICIENT_EVIDENCE,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0375,CASE-0375,Case Reviewer,2026-08-21T21:43:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0376,CASE-0376,Case Reviewer,2026-07-22T08:30:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0377,CASE-0377,Case Reviewer,2026-08-11T21:55:00,REFER,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0378,CASE-0378,Case Reviewer,2026-08-29T15:16:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0379,CASE-0379,Case Reviewer,2026-07-25T13:24:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0380,CASE-0380,Case Reviewer,2026-07-23T19:28:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0381,CASE-0381,Case Reviewer,2026-08-02T22:58:00,REVIEW_REQUIRED,0.96,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0382,CASE-0382,Case Reviewer,2026-07-25T05:44:00,INSUFFICIENT_EVIDENCE,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0383,CASE-0383,Case Reviewer,2026-07-20T20:24:00,CLEAR,0.74,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0384,CASE-0384,Case Reviewer,2026-08-25T23:57:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0385,CASE-0385,Case Reviewer,2026-08-19T18:15:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0386,CASE-0386,Case Reviewer,2026-07-28T20:40:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0387,CASE-0387,Case Reviewer,2026-08-23T22:38:00,INSUFFICIENT_EVIDENCE,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0388,CASE-0388,Case Reviewer,2026-08-19T23:42:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0389,CASE-0389,Case Reviewer,2026-08-20T18:43:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0390,CASE-0390,Case Reviewer,2026-07-28T20:37:00,REFER,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0391,CASE-0391,Case Reviewer,2026-08-18T21:01:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0392,CASE-0392,Case Reviewer,2026-07-25T17:26:00,REFER,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0393,CASE-0393,Case Reviewer,2026-08-08T22:23:00,REFER,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0394,CASE-0394,Case Reviewer,2026-08-27T16:04:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0395,CASE-0395,Case Reviewer,2026-07-19T15:15:00,CLEAR,0.93,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0396,CASE-0396,Case Reviewer,2026-07-20T20:32:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0397,CASE-0397,Case Reviewer,2026-09-04T16:46:00,CLEAR,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0398,CASE-0398,Case Reviewer,2026-07-22T14:39:00,CLEAR,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0399,CASE-0399,Case Reviewer,2026-08-19T14:35:00,INSUFFICIENT_EVIDENCE,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0400,CASE-0400,Case Reviewer,2026-07-25T01:37:00,REVIEW_REQUIRED,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0401,CASE-0401,Case Reviewer,2026-08-20T13:03:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0402,CASE-0402,Case Reviewer,2026-07-31T18:04:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0403,CASE-0403,Case Reviewer,2026-08-29T03:04:00,INSUFFICIENT_EVIDENCE,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0404,CASE-0404,Case Reviewer,2026-08-09T03:45:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0405,CASE-0405,Case Reviewer,2026-07-26T04:53:00,INSUFFICIENT_EVIDENCE,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0406,CASE-0406,Case Reviewer,2026-07-25T23:39:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0407,CASE-0407,Case Reviewer,2026-08-01T20:20:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0408,CASE-0408,Case Reviewer,2026-08-02T20:38:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0409,CASE-0409,Case Reviewer,2026-08-19T02:43:00,REVIEW_REQUIRED,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0410,CASE-0410,Case Reviewer,2026-07-20T06:44:00,INSUFFICIENT_EVIDENCE,0.92,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0411,CASE-0411,Case Reviewer,2026-08-14T21:46:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0412,CASE-0412,Case Reviewer,2026-08-18T04:23:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0413,CASE-0413,Case Reviewer,2026-07-19T00:38:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0414,CASE-0414,Case Reviewer,2026-08-17T14:24:00,REVIEW_REQUIRED,0.71,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0415,CASE-0415,Case Reviewer,2026-07-22T03:48:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0416,CASE-0416,Case Reviewer,2026-08-01T01:15:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0417,CASE-0417,Case Reviewer,2026-08-09T17:38:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0418,CASE-0418,Case Reviewer,2026-08-09T18:10:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0419,CASE-0419,Case Reviewer,2026-09-06T01:47:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0420,CASE-0420,Case Reviewer,2026-08-15T02:34:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0421,CASE-0421,Case Reviewer,2026-08-24T09:46:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0422,CASE-0422,Case Reviewer,2026-09-05T03:39:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0423,CASE-0423,Case Reviewer,2026-07-25T02:50:00,CLEAR,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0424,CASE-0424,Case Reviewer,2026-08-13T10:25:00,CLEAR,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0425,CASE-0425,Case Reviewer,2026-07-27T00:32:00,REFER,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0426,CASE-0426,Case Reviewer,2026-08-19T08:33:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0427,CASE-0427,Case Reviewer,2026-09-06T00:38:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0428,CASE-0428,Case Reviewer,2026-09-03T23:20:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0429,CASE-0429,Case Reviewer,2026-08-15T00:33:00,INSUFFICIENT_EVIDENCE,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0430,CASE-0430,Case Reviewer,2026-08-11T01:19:00,REFER,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0431,CASE-0431,Case Reviewer,2026-08-17T02:02:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0432,CASE-0432,Case Reviewer,2026-07-21T16:52:00,CLEAR,0.79,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0433,CASE-0433,Case Reviewer,2026-07-23T23:30:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0434,CASE-0434,Case Reviewer,2026-08-27T22:41:00,INSUFFICIENT_EVIDENCE,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0435,CASE-0435,Case Reviewer,2026-09-01T19:45:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0436,CASE-0436,Case Reviewer,2026-07-29T17:44:00,REFER,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0437,CASE-0437,Case Reviewer,2026-08-08T06:29:00,REVIEW_REQUIRED,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0438,CASE-0438,Case Reviewer,2026-08-29T19:28:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0439,CASE-0439,Case Reviewer,2026-08-16T02:47:00,REVIEW_REQUIRED,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0440,CASE-0440,Case Reviewer,2026-08-26T18:10:00,REFER,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0441,CASE-0441,Case Reviewer,2026-07-27T19:35:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0442,CASE-0442,Case Reviewer,2026-08-17T07:51:00,REVIEW_REQUIRED,0.92,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0443,CASE-0443,Case Reviewer,2026-08-04T22:23:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0444,CASE-0444,Case Reviewer,2026-09-02T00:18:00,REFER,0.75,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0445,CASE-0445,Case Reviewer,2026-08-25T23:40:00,CLEAR,0.82,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0446,CASE-0446,Case Reviewer,2026-07-20T00:35:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0447,CASE-0447,Case Reviewer,2026-09-05T19:08:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0448,CASE-0448,Case Reviewer,2026-09-03T21:26:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0449,CASE-0449,Case Reviewer,2026-07-26T19:01:00,REFER,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0450,CASE-0450,Case Reviewer,2026-07-27T20:40:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0451,CASE-0451,Case Reviewer,2026-07-19T14:38:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0452,CASE-0452,Case Reviewer,2026-07-27T15:34:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0453,CASE-0453,Case Reviewer,2026-08-30T19:30:00,CLEAR,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0454,CASE-0454,Case Reviewer,2026-07-27T14:45:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0455,CASE-0455,Case Reviewer,2026-08-28T01:29:00,CLEAR,0.92,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0456,CASE-0456,Case Reviewer,2026-07-27T23:45:00,INSUFFICIENT_EVIDENCE,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0457,CASE-0457,Case Reviewer,2026-08-30T22:06:00,CLEAR,0.73,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0458,CASE-0458,Case Reviewer,2026-07-18T22:36:00,REVIEW_REQUIRED,0.97,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0459,CASE-0459,Case Reviewer,2026-08-21T03:31:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0460,CASE-0460,Case Reviewer,2026-07-28T03:11:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0461,CASE-0461,Case Reviewer,2026-08-29T14:01:00,REFER,0.7,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0462,CASE-0462,Case Reviewer,2026-08-21T03:05:00,REVIEW_REQUIRED,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0463,CASE-0463,Case Reviewer,2026-07-24T02:09:00,CLEAR,0.86,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0464,CASE-0464,Case Reviewer,2026-08-02T07:02:00,REVIEW_REQUIRED,0.94,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0465,CASE-0465,Case Reviewer,2026-07-28T01:14:00,INSUFFICIENT_EVIDENCE,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0466,CASE-0466,Case Reviewer,2026-08-03T20:48:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0467,CASE-0467,Case Reviewer,2026-07-29T18:05:00,REFER,0.95,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0468,CASE-0468,Case Reviewer,2026-08-05T03:21:00,INSUFFICIENT_EVIDENCE,0.91,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0469,CASE-0469,Case Reviewer,2026-07-26T23:41:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0470,CASE-0470,Case Reviewer,2026-07-20T23:25:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0471,CASE-0471,Case Reviewer,2026-08-17T23:02:00,CLEAR,0.89,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0472,CASE-0472,Case Reviewer,2026-08-06T23:17:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0473,CASE-0473,Case Reviewer,2026-08-02T02:29:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0474,CASE-0474,Case Reviewer,2026-08-20T01:37:00,REVIEW_REQUIRED,0.5,High discrepancy: Severe pathology finding vs Normal imaging read. Multidisciplinary review conference required.,100.0
+REV-0475,CASE-0475,Case Reviewer,2026-08-01T07:20:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0476,CASE-0476,Case Reviewer,2026-07-25T17:41:00,INSUFFICIENT_EVIDENCE,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0477,CASE-0477,Case Reviewer,2026-08-01T23:34:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0478,CASE-0478,Case Reviewer,2026-08-24T00:50:00,REVIEW_REQUIRED,0.83,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0479,CASE-0479,Case Reviewer,2026-07-20T01:11:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0480,CASE-0480,Case Reviewer,2026-08-13T20:41:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0481,CASE-0481,Case Reviewer,2026-08-07T17:23:00,INSUFFICIENT_EVIDENCE,0.98,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0482,CASE-0482,Case Reviewer,2026-08-13T20:47:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0483,CASE-0483,Case Reviewer,2026-09-03T19:15:00,REFER,0.8,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0484,CASE-0484,Case Reviewer,2026-08-27T14:08:00,REFER,0.76,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0485,CASE-0485,Case Reviewer,2026-07-20T20:35:00,INSUFFICIENT_EVIDENCE,0.88,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0486,CASE-0486,Case Reviewer,2026-07-29T02:21:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0487,CASE-0487,Case Reviewer,2026-07-23T06:23:00,REFER,0.81,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0488,CASE-0488,Case Reviewer,2026-09-05T02:09:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0489,CASE-0489,Case Reviewer,2026-07-24T03:37:00,INSUFFICIENT_EVIDENCE,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0490,CASE-0490,Case Reviewer,2026-08-07T20:33:00,REVIEW_REQUIRED,0.72,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0491,CASE-0491,Case Reviewer,2026-08-05T00:21:00,CLEAR,0.78,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0492,CASE-0492,Case Reviewer,2026-09-01T02:26:00,INSUFFICIENT_EVIDENCE,0.4,Specimen accession chain-of-custody broken. Laboratory results cannot be authenticated to this patient.,70.0
+REV-0493,CASE-0493,Case Reviewer,2026-08-06T01:49:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0494,CASE-0494,Case Reviewer,2026-07-19T18:57:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0495,CASE-0495,Case Reviewer,2026-07-30T23:07:00,REVIEW_REQUIRED,0.84,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0496,CASE-0496,Case Reviewer,2026-07-24T18:24:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0
+REV-0497,CASE-0497,Case Reviewer,2026-08-12T22:06:00,REVIEW_REQUIRED,0.55,Fundus imaging quality is sub-threshold (38/100). Patient scheduled for repeat in-person slit-lamp exam.,90.0
+REV-0498,CASE-0498,Case Reviewer,2026-07-30T00:36:00,CLEAR,0.87,Multidisciplinary evidence reviewed. Follow-up plan established based on risk stratification.,100.0
+REV-0499,CASE-0499,Case Reviewer,2026-09-04T21:20:00,REVIEW_REQUIRED,0.65,Molecular test result is over 30 days old. Current clinical symptoms need re-evaluation against active pathology.,100.0
+REV-0500,CASE-0500,Case Reviewer,2026-09-06T00:54:00,INSUFFICIENT_EVIDENCE,0.6,Molecular PCR result unavailable. Awaiting reflex viral biomarker testing before finalizing referral decision.,80.0

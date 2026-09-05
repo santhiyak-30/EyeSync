@@ -1,0 +1,431 @@
+molecular_id,case_id,specimen_id,result_at,result_status,confidence,test_type,finding
+MOL-0001,CASE-0001,SPEC-0001,2026-09-04T20:58:00,AVAILABLE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0003,CASE-0003,SPEC-0003,2026-09-05T19:14:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0004,CASE-0004,SPEC-0004,2026-07-12T10:00:00,STALE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0005,CASE-0005,SPEC-0005,2026-09-04T21:54:00,AVAILABLE,0.95,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0006,CASE-0006,SPEC-0006,2026-09-04T20:41:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0007,CASE-0007,SPEC-0007,2026-08-12T23:44:00,AVAILABLE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0008,CASE-0008,SPEC-0008,2026-09-06T19:55:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0009,CASE-0009,SPEC-0009,2026-08-27T17:48:00,AVAILABLE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0010,CASE-0010,SPEC-0010,2026-07-11T10:00:00,STALE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0011,CASE-0011,SPEC-0011,2026-07-26T13:44:00,STALE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0012,CASE-0012,SPEC-0012,2026-07-16T10:00:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0013,CASE-0013,SPEC-0013,2026-08-30T23:03:00,AVAILABLE,0.99,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0014,CASE-0014,SPEC-0014,2026-08-16T10:08:00,AVAILABLE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0015,CASE-0015,SPEC-0015,2026-07-28T15:34:00,STALE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0016,CASE-0016,SPEC-0016,2026-08-19T18:40:00,AVAILABLE,0.96,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0017,CASE-0017,SPEC-0017,2026-07-28T16:38:00,STALE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0018,CASE-0018,SPEC-0018,2026-08-30T19:51:00,AVAILABLE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0019,CASE-0019,SPEC-0019,2026-08-23T21:15:00,AVAILABLE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0021,CASE-0021,SPEC-0021,2026-07-12T10:00:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0024,CASE-0024,SPEC-0024,2026-07-21T12:23:00,STALE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0025,CASE-0025,SPEC-0025,2026-08-11T20:40:00,AVAILABLE,0.99,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0026,CASE-0026,SPEC-0026,2026-07-26T10:00:00,STALE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0027,CASE-0027,SPEC-0027,2026-08-29T10:11:00,AVAILABLE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0029,CASE-0029,SPEC-0029,2026-07-20T09:01:00,STALE,0.96,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0030,CASE-0030,SPEC-0030,2026-08-25T11:32:00,AVAILABLE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0031,CASE-0031,SPEC-0031,2026-09-04T19:30:00,AVAILABLE,0.95,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0032,CASE-0032,SPEC-0032,2026-08-01T20:54:00,STALE,0.98,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0033,CASE-0033,SPEC-0033,2026-07-10T10:00:00,STALE,0.99,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0034,CASE-0034,SPEC-0034,2026-08-03T18:38:00,STALE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0035,CASE-0035,SPEC-0035,2026-07-21T10:00:00,STALE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0036,CASE-0036,SPEC-0036,2026-08-15T14:40:00,AVAILABLE,0.97,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0037,CASE-0037,SPEC-0037,2026-08-13T22:19:00,AVAILABLE,0.89,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0038,CASE-0038,SPEC-0038,2026-09-01T15:11:00,AVAILABLE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0039,CASE-0039,SPEC-0039,2026-09-07T00:40:00,AVAILABLE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0040,CASE-0040,SPEC-0040,2026-07-25T14:56:00,STALE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0042,CASE-0042,SPEC-0042,2026-08-09T15:32:00,AVAILABLE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0043,CASE-0043,SPEC-0043,2026-07-23T02:39:00,STALE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0044,CASE-0044,SPEC-0044,2026-08-15T04:23:00,AVAILABLE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0045,CASE-0045,SPEC-0045,2026-08-27T13:17:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0046,CASE-0046,SPEC-0046,2026-08-22T13:52:00,AVAILABLE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0047,CASE-0047,SPEC-0047,2026-07-18T23:32:00,STALE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0048,CASE-0048,SPEC-0048,2026-08-29T18:27:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0049,CASE-0049,SPEC-0049,2026-07-25T16:39:00,STALE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0050,CASE-0050,SPEC-0050,2026-08-06T16:50:00,AVAILABLE,0.86,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0051,CASE-0051,SPEC-0051,2026-07-31T23:01:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0052,CASE-0052,SPEC-0052,2026-07-24T10:00:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0054,CASE-0054,SPEC-0054,2026-09-05T14:56:00,AVAILABLE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0055,CASE-0055,SPEC-0055,2026-09-05T23:58:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0056,CASE-0056,SPEC-0056,2026-08-02T14:27:00,STALE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0057,CASE-0057,SPEC-0057,2026-09-02T15:57:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0058,CASE-0058,SPEC-0058,2026-08-15T18:42:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0060,CASE-0060,SPEC-0060,2026-07-28T19:44:00,STALE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0061,CASE-0061,SPEC-0061,2026-08-29T17:09:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0062,CASE-0062,SPEC-0062,2026-07-24T13:37:00,STALE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0064,CASE-0064,SPEC-0064,2026-08-31T19:49:00,AVAILABLE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0065,CASE-0065,SPEC-0065,2026-08-10T20:04:00,AVAILABLE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0066,CASE-0066,SPEC-0066,2026-07-20T15:36:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0067,CASE-0067,SPEC-0067,2026-07-23T23:08:00,STALE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0068,CASE-0068,SPEC-0068,2026-07-22T00:21:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0069,CASE-0069,SPEC-0069,2026-08-26T18:01:00,AVAILABLE,0.87,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0070,CASE-0070,SPEC-0070,2026-08-16T21:37:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0071,CASE-0071,SPEC-0071,2026-07-30T10:00:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0072,CASE-0072,SPEC-0072,2026-08-10T16:26:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0073,CASE-0073,SPEC-0073,2026-08-25T16:29:00,AVAILABLE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0074,CASE-0074,SPEC-0074,2026-07-29T19:36:00,STALE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0075,CASE-0075,SPEC-0075,2026-08-03T17:23:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0076,CASE-0076,SPEC-0076,2026-07-14T10:00:00,STALE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0077,CASE-0077,SPEC-0077,2026-08-18T08:16:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0078,CASE-0078,SPEC-0078,2026-08-04T20:11:00,AVAILABLE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0079,CASE-0079,SPEC-0079,2026-07-22T10:00:00,STALE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0080,CASE-0080,SPEC-0080,2026-07-20T14:13:00,STALE,0.89,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0081,CASE-0081,SPEC-0081,2026-08-16T22:36:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0082,CASE-0082,SPEC-0082,2026-09-01T01:11:00,AVAILABLE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0083,CASE-0083,SPEC-0083,2026-07-26T19:43:00,STALE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0084,CASE-0084,SPEC-0084,2026-07-24T15:23:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0085,CASE-0085,SPEC-0085,2026-07-22T17:38:00,STALE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0087,CASE-0087,SPEC-0087,2026-09-05T15:33:00,AVAILABLE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0088,CASE-0088,SPEC-0088,2026-07-28T19:08:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0089,CASE-0089,SPEC-0089,2026-08-04T20:16:00,AVAILABLE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0090,CASE-0090,SPEC-0090,2026-08-16T18:21:00,AVAILABLE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0091,CASE-0091,SPEC-0091,2026-09-02T13:53:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0092,CASE-0092,SPEC-0092,2026-08-03T18:38:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0094,CASE-0094,SPEC-0094,2026-08-06T18:33:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0096,CASE-0096,SPEC-0096,2026-08-31T16:40:00,AVAILABLE,0.9,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0098,CASE-0098,SPEC-0098,2026-08-05T20:15:00,AVAILABLE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0099,CASE-0099,SPEC-0099,2026-08-25T11:30:00,AVAILABLE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0100,CASE-0100,SPEC-0100,2026-08-09T18:29:00,AVAILABLE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0102,CASE-0102,SPEC-0102,2026-08-17T00:35:00,AVAILABLE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0104,CASE-0104,SPEC-0104,2026-08-13T16:12:00,AVAILABLE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0105,CASE-0105,SPEC-0105,2026-09-04T17:08:00,AVAILABLE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0106,CASE-0106,SPEC-0106,2026-08-02T14:59:00,STALE,0.85,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0108,CASE-0108,SPEC-0108,2026-07-28T10:00:00,STALE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0109,CASE-0109,SPEC-0109,2026-09-01T17:06:00,AVAILABLE,0.85,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0110,CASE-0110,SPEC-0110,2026-07-29T20:22:00,STALE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0111,CASE-0111,SPEC-0111,2026-07-19T10:00:00,STALE,0.98,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0113,CASE-0113,SPEC-0113,2026-09-03T16:23:00,AVAILABLE,0.97,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0114,CASE-0114,SPEC-0114,2026-08-15T15:39:00,AVAILABLE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0115,CASE-0115,SPEC-0115,2026-08-26T14:12:00,AVAILABLE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0116,CASE-0116,SPEC-0116,2026-08-02T16:53:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0117,CASE-0117,SPEC-0117,2026-07-10T10:00:00,STALE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0118,CASE-0118,SPEC-0118,2026-07-26T10:00:00,STALE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0119,CASE-0119,SPEC-0119,2026-08-03T14:11:00,STALE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0120,CASE-0120,SPEC-0120,2026-09-01T01:35:00,AVAILABLE,0.87,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0121,CASE-0121,SPEC-0121,2026-07-16T10:00:00,STALE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0122,CASE-0122,SPEC-0122,2026-07-14T10:00:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0123,CASE-0123,SPEC-0123,2026-08-21T16:28:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0124,CASE-0124,SPEC-0124,2026-07-30T16:14:00,STALE,0.97,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0125,CASE-0125,SPEC-0125,2026-07-19T10:00:00,STALE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0126,CASE-0126,SPEC-0126,2026-08-27T23:53:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0127,CASE-0127,SPEC-0127,2026-07-18T10:00:00,STALE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0128,CASE-0128,SPEC-0128,2026-09-06T12:47:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0129,CASE-0129,SPEC-0129,2026-08-14T16:49:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0131,CASE-0131,SPEC-0131,2026-08-25T19:24:00,AVAILABLE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0132,CASE-0132,SPEC-0132,2026-07-26T13:32:00,STALE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0133,CASE-0133,SPEC-0133,2026-07-21T19:05:00,STALE,0.99,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0134,CASE-0134,SPEC-0134,2026-07-20T15:29:00,STALE,0.86,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0135,CASE-0135,SPEC-0135,2026-08-10T15:52:00,AVAILABLE,0.95,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0136,CASE-0136,SPEC-0136,2026-08-30T21:11:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0138,CASE-0138,SPEC-0138,2026-07-29T21:42:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0139,CASE-0139,SPEC-0139,2026-08-02T17:03:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0140,CASE-0140,SPEC-0140,2026-07-25T19:04:00,STALE,0.87,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0141,CASE-0141,SPEC-0141,2026-08-10T22:24:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0142,CASE-0142,SPEC-0142,2026-08-22T21:17:00,AVAILABLE,0.9,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0143,CASE-0143,SPEC-0143,2026-07-10T10:00:00,STALE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0145,CASE-0145,SPEC-0145,2026-07-30T10:00:00,STALE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0146,CASE-0146,SPEC-0146,2026-09-08T09:21:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0148,CASE-0148,SPEC-0148,2026-07-20T15:42:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0149,CASE-0149,SPEC-0149,2026-09-02T12:43:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0150,CASE-0150,SPEC-0150,2026-08-26T00:43:00,AVAILABLE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0151,CASE-0151,SPEC-0151,2026-08-02T15:35:00,STALE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0153,CASE-0153,SPEC-0153,2026-08-22T21:21:00,AVAILABLE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0154,CASE-0154,SPEC-0154,2026-07-27T14:26:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0155,CASE-0155,SPEC-0155,2026-07-31T18:52:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0156,CASE-0156,SPEC-0156,2026-08-03T14:10:00,STALE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0158,CASE-0158,SPEC-0158,2026-07-29T02:49:00,STALE,0.93,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0159,CASE-0159,SPEC-0159,2026-08-03T13:38:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0160,CASE-0160,SPEC-0160,2026-08-19T17:41:00,AVAILABLE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0161,CASE-0161,SPEC-0161,2026-08-05T00:05:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0162,CASE-0162,SPEC-0162,2026-09-05T20:16:00,AVAILABLE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0163,CASE-0163,SPEC-0163,2026-08-21T19:48:00,AVAILABLE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0164,CASE-0164,SPEC-0164,2026-08-21T20:06:00,AVAILABLE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0165,CASE-0165,SPEC-0165,2026-09-02T17:20:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0166,CASE-0166,SPEC-0166,2026-08-26T16:17:00,AVAILABLE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0168,CASE-0168,SPEC-0168,2026-08-07T15:45:00,AVAILABLE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0169,CASE-0169,SPEC-0169,2026-08-27T19:03:00,AVAILABLE,0.88,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0170,CASE-0170,SPEC-0170,2026-08-18T19:19:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0171,CASE-0171,SPEC-0171,2026-07-20T17:56:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0172,CASE-0172,SPEC-0172,2026-07-26T20:12:00,STALE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0173,CASE-0173,SPEC-0173,2026-07-31T18:11:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0174,CASE-0174,SPEC-0174,2026-08-27T14:37:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0176,CASE-0176,SPEC-0176,2026-07-25T16:03:00,STALE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0177,CASE-0177,SPEC-0177,2026-07-27T16:37:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0178,CASE-0178,SPEC-0178,2026-07-28T10:00:00,STALE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0179,CASE-0179,SPEC-0179,2026-07-21T10:09:00,STALE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0180,CASE-0180,SPEC-0180,2026-07-25T18:31:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0181,CASE-0181,SPEC-0181,2026-07-24T10:00:00,STALE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0182,CASE-0182,SPEC-0182,2026-07-22T10:00:00,STALE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0183,CASE-0183,SPEC-0183,2026-07-24T10:00:00,STALE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0184,CASE-0184,SPEC-0184,2026-09-04T23:26:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0185,CASE-0185,SPEC-0185,2026-08-01T22:32:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0189,CASE-0189,SPEC-0189,2026-08-27T14:06:00,AVAILABLE,0.95,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0190,CASE-0190,SPEC-0190,2026-08-04T12:49:00,AVAILABLE,0.85,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0191,CASE-0191,SPEC-0191,2026-08-07T18:46:00,AVAILABLE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0192,CASE-0192,SPEC-0192,2026-08-11T21:49:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0193,CASE-0193,SPEC-0193,2026-07-26T14:54:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0194,CASE-0194,SPEC-0194,2026-07-26T10:00:00,STALE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0195,CASE-0195,SPEC-0195,2026-07-21T00:06:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0196,CASE-0196,SPEC-0196,2026-08-15T22:26:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0197,CASE-0197,SPEC-0197,2026-07-27T18:38:00,STALE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0198,CASE-0198,SPEC-0198,2026-07-21T20:23:00,STALE,0.86,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0199,CASE-0199,SPEC-0199,2026-07-27T10:00:00,STALE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0200,CASE-0200,SPEC-0200,2026-08-07T16:22:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0202,CASE-0202,SPEC-0202,2026-08-26T15:40:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0203,CASE-0203,SPEC-0203,2026-08-24T10:35:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0204,CASE-0204,SPEC-0204,2026-08-25T17:21:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0205,CASE-0205,SPEC-0205,2026-08-15T17:10:00,AVAILABLE,0.93,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0206,CASE-0206,SPEC-0206,2026-08-29T18:27:00,AVAILABLE,0.99,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0207,CASE-0207,SPEC-0207,2026-07-18T10:00:00,STALE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0208,CASE-0208,SPEC-0208,2026-07-30T10:00:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0210,CASE-0210,SPEC-0210,2026-08-12T19:43:00,AVAILABLE,0.87,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0212,CASE-0212,SPEC-0212,2026-08-10T18:05:00,AVAILABLE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0213,CASE-0213,SPEC-0213,2026-08-26T18:57:00,AVAILABLE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0214,CASE-0214,SPEC-0214,2026-07-23T18:34:00,STALE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0215,CASE-0215,SPEC-0215,2026-07-28T15:55:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0216,CASE-0216,SPEC-0216,2026-09-02T18:53:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0217,CASE-0217,SPEC-0217,2026-09-04T17:44:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0220,CASE-0220,SPEC-0220,2026-09-01T19:51:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0221,CASE-0221,SPEC-0221,2026-08-07T16:45:00,AVAILABLE,0.85,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0222,CASE-0222,SPEC-0222,2026-08-09T19:04:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0223,CASE-0223,SPEC-0223,2026-08-07T13:57:00,AVAILABLE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0224,CASE-0224,SPEC-0224,2026-08-02T11:02:00,STALE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0225,CASE-0225,SPEC-0225,2026-07-27T23:41:00,STALE,0.99,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0226,CASE-0226,SPEC-0226,2026-08-28T09:49:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0228,CASE-0228,SPEC-0228,2026-07-20T10:00:00,STALE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0230,CASE-0230,SPEC-0230,2026-08-19T19:04:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0231,CASE-0231,SPEC-0231,2026-08-17T19:52:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0232,CASE-0232,SPEC-0232,2026-07-27T10:00:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0233,CASE-0233,SPEC-0233,2026-08-28T07:41:00,AVAILABLE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0234,CASE-0234,SPEC-0234,2026-08-30T15:51:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0235,CASE-0235,SPEC-0235,2026-09-07T00:50:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0237,CASE-0237,SPEC-0237,2026-07-18T18:16:00,STALE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0238,CASE-0238,SPEC-0238,2026-07-28T13:52:00,STALE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0239,CASE-0239,SPEC-0239,2026-08-14T12:16:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0240,CASE-0240,SPEC-0240,2026-07-20T10:00:00,STALE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0241,CASE-0241,SPEC-0241,2026-07-17T10:00:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0242,CASE-0242,SPEC-0242,2026-07-22T17:22:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0244,CASE-0244,SPEC-0244,2026-08-05T13:17:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0246,CASE-0246,SPEC-0246,2026-09-05T03:04:00,AVAILABLE,0.88,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0247,CASE-0247,SPEC-0247,2026-07-20T19:32:00,STALE,0.85,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0248,CASE-0248,SPEC-0248,2026-07-22T17:43:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0250,CASE-0250,SPEC-0250,2026-08-24T18:26:00,AVAILABLE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0251,CASE-0251,SPEC-0251,2026-08-24T18:15:00,AVAILABLE,0.89,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0252,CASE-0252,SPEC-0252,2026-08-08T15:21:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0253,CASE-0253,SPEC-0253,2026-08-20T17:53:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0254,CASE-0254,SPEC-0254,2026-08-27T20:57:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0255,CASE-0255,SPEC-0255,2026-08-03T22:31:00,STALE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0256,CASE-0256,SPEC-0256,2026-07-24T20:34:00,STALE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0258,CASE-0258,SPEC-0258,2026-08-06T17:28:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0259,CASE-0259,SPEC-0259,2026-07-23T23:06:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0260,CASE-0260,SPEC-0260,2026-08-18T16:22:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0262,CASE-0262,SPEC-0262,2026-07-14T10:00:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0263,CASE-0263,SPEC-0263,2026-08-07T02:32:00,AVAILABLE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0264,CASE-0264,SPEC-0264,2026-07-26T17:09:00,STALE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0265,CASE-0265,SPEC-0265,2026-08-15T14:52:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0266,CASE-0266,SPEC-0266,2026-08-23T18:49:00,AVAILABLE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0267,CASE-0267,SPEC-0267,2026-08-08T14:51:00,AVAILABLE,0.99,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0268,CASE-0268,SPEC-0268,2026-08-14T17:59:00,AVAILABLE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0269,CASE-0269,SPEC-0269,2026-07-21T18:58:00,STALE,0.99,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0270,CASE-0270,SPEC-0270,2026-07-22T10:00:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0271,CASE-0271,SPEC-0271,2026-07-23T17:07:00,STALE,0.89,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0272,CASE-0272,SPEC-0272,2026-08-27T23:09:00,AVAILABLE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0273,CASE-0273,SPEC-0273,2026-08-17T19:08:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0274,CASE-0274,SPEC-0274,2026-08-25T02:42:00,AVAILABLE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0275,CASE-0275,SPEC-0275,2026-08-12T14:56:00,AVAILABLE,0.85,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0276,CASE-0276,SPEC-0276,2026-08-03T20:40:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0277,CASE-0277,SPEC-0277,2026-07-21T14:23:00,STALE,0.85,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0279,CASE-0279,SPEC-0279,2026-08-16T16:31:00,AVAILABLE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0280,CASE-0280,SPEC-0280,2026-08-28T23:51:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0281,CASE-0281,SPEC-0281,2026-07-23T10:00:00,STALE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0282,CASE-0282,SPEC-0282,2026-08-16T07:09:00,AVAILABLE,0.86,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0283,CASE-0283,SPEC-0283,2026-08-09T14:03:00,AVAILABLE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0284,CASE-0284,SPEC-0284,2026-08-08T15:18:00,AVAILABLE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0285,CASE-0285,SPEC-0285,2026-08-27T14:15:00,AVAILABLE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0286,CASE-0286,SPEC-0286,2026-09-02T13:52:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0287,CASE-0287,SPEC-0287,2026-08-16T18:44:00,AVAILABLE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0288,CASE-0288,SPEC-0288,2026-07-29T13:46:00,STALE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0289,CASE-0289,SPEC-0289,2026-08-13T18:24:00,AVAILABLE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0291,CASE-0291,SPEC-0291,2026-07-31T23:29:00,STALE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0292,CASE-0292,SPEC-0292,2026-08-06T22:38:00,AVAILABLE,0.88,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0293,CASE-0293,SPEC-0293,2026-08-19T01:49:00,AVAILABLE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0294,CASE-0294,SPEC-0294,2026-08-13T20:12:00,AVAILABLE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0295,CASE-0295,SPEC-0295,2026-07-23T13:34:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0296,CASE-0296,SPEC-0296,2026-08-12T20:11:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0298,CASE-0298,SPEC-0298,2026-07-22T10:46:00,STALE,0.96,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0299,CASE-0299,SPEC-0299,2026-09-01T14:39:00,AVAILABLE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0300,CASE-0300,SPEC-0300,2026-07-28T14:53:00,STALE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0303,CASE-0303,SPEC-0303,2026-07-17T10:00:00,STALE,0.97,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0304,CASE-0304,SPEC-0304,2026-07-17T10:00:00,STALE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0305,CASE-0305,SPEC-0305,2026-08-27T16:11:00,AVAILABLE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0306,CASE-0306,SPEC-0306,2026-08-12T16:14:00,AVAILABLE,0.99,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0307,CASE-0307,SPEC-0307,2026-09-03T13:26:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0308,CASE-0308,SPEC-0308,2026-07-15T10:00:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0309,CASE-0309,SPEC-0309,2026-08-16T20:16:00,AVAILABLE,0.85,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0310,CASE-0310,SPEC-0310,2026-08-06T18:12:00,AVAILABLE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0311,CASE-0311,SPEC-0311,2026-07-25T17:53:00,STALE,0.88,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0312,CASE-0312,SPEC-0312,2026-07-20T12:47:00,STALE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0313,CASE-0313,SPEC-0313,2026-08-18T16:12:00,AVAILABLE,0.99,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0314,CASE-0314,SPEC-0314,2026-07-20T14:34:00,STALE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0315,CASE-0315,SPEC-0315,2026-07-30T17:16:00,STALE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0317,CASE-0317,SPEC-0317,2026-07-23T17:34:00,STALE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0318,CASE-0318,SPEC-0318,2026-08-01T18:32:00,STALE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0319,CASE-0319,SPEC-0319,2026-07-28T23:55:00,STALE,0.99,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0320,CASE-0320,SPEC-0320,2026-08-30T10:52:00,AVAILABLE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0321,CASE-0321,SPEC-0321,2026-07-31T00:02:00,STALE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0322,CASE-0322,SPEC-0322,2026-08-25T13:37:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0323,CASE-0323,SPEC-0323,2026-08-03T13:15:00,STALE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0324,CASE-0324,SPEC-0324,2026-07-27T10:00:00,STALE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0325,CASE-0325,SPEC-0325,2026-08-03T01:33:00,STALE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0326,CASE-0326,SPEC-0326,2026-08-10T20:12:00,AVAILABLE,0.87,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0327,CASE-0327,SPEC-0327,2026-07-14T10:00:00,STALE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0328,CASE-0328,SPEC-0328,2026-08-23T22:51:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0330,CASE-0330,SPEC-0330,2026-08-12T19:03:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0332,CASE-0332,SPEC-0332,2026-09-06T19:23:00,AVAILABLE,0.99,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0333,CASE-0333,SPEC-0333,2026-09-07T17:19:00,AVAILABLE,0.98,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0334,CASE-0334,SPEC-0334,2026-08-24T15:42:00,AVAILABLE,0.85,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0335,CASE-0335,SPEC-0335,2026-07-23T06:47:00,STALE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0336,CASE-0336,SPEC-0336,2026-08-02T14:05:00,STALE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0337,CASE-0337,SPEC-0337,2026-07-19T10:00:00,STALE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0338,CASE-0338,SPEC-0338,2026-07-28T00:39:00,STALE,0.9,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0339,CASE-0339,SPEC-0339,2026-08-23T18:54:00,AVAILABLE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0340,CASE-0340,SPEC-0340,2026-09-01T20:35:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0341,CASE-0341,SPEC-0341,2026-09-02T18:21:00,AVAILABLE,0.95,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0342,CASE-0342,SPEC-0342,2026-08-22T14:48:00,AVAILABLE,0.87,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0343,CASE-0343,SPEC-0343,2026-07-31T22:11:00,STALE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0344,CASE-0344,SPEC-0344,2026-07-23T12:53:00,STALE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0345,CASE-0345,SPEC-0345,2026-07-21T13:44:00,STALE,0.86,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0346,CASE-0346,SPEC-0346,2026-08-09T22:52:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0347,CASE-0347,SPEC-0347,2026-07-31T16:05:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0348,CASE-0348,SPEC-0348,2026-08-25T11:23:00,AVAILABLE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0349,CASE-0349,SPEC-0349,2026-09-02T16:38:00,AVAILABLE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0350,CASE-0350,SPEC-0350,2026-07-30T00:57:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0351,CASE-0351,SPEC-0351,2026-07-21T10:00:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0352,CASE-0352,SPEC-0352,2026-07-31T17:52:00,STALE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0353,CASE-0353,SPEC-0353,2026-07-31T13:44:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0354,CASE-0354,SPEC-0354,2026-08-07T20:19:00,AVAILABLE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0356,CASE-0356,SPEC-0356,2026-08-16T23:02:00,AVAILABLE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0357,CASE-0357,SPEC-0357,2026-08-27T23:37:00,AVAILABLE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0358,CASE-0358,SPEC-0358,2026-07-22T21:07:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0359,CASE-0359,SPEC-0359,2026-08-09T20:37:00,AVAILABLE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0360,CASE-0360,SPEC-0360,2026-08-29T15:42:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0361,CASE-0361,SPEC-0361,2026-08-10T20:02:00,AVAILABLE,0.85,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0362,CASE-0362,SPEC-0362,2026-07-22T18:45:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0363,CASE-0363,SPEC-0363,2026-07-30T10:00:00,STALE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0364,CASE-0364,SPEC-0364,2026-08-04T19:38:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0365,CASE-0365,SPEC-0365,2026-07-14T10:00:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0367,CASE-0367,SPEC-0367,2026-08-04T10:29:00,AVAILABLE,0.92,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0368,CASE-0368,SPEC-0368,2026-07-31T19:06:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0369,CASE-0369,SPEC-0369,2026-08-28T19:28:00,AVAILABLE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0370,CASE-0370,SPEC-0370,2026-08-11T13:23:00,AVAILABLE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0372,CASE-0372,SPEC-0372,2026-07-17T10:00:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0373,CASE-0373,SPEC-0373,2026-09-06T13:54:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0374,CASE-0374,SPEC-0374,2026-08-04T16:24:00,AVAILABLE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0376,CASE-0376,SPEC-0376,2026-07-14T10:00:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0377,CASE-0377,SPEC-0377,2026-08-14T18:55:00,AVAILABLE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0379,CASE-0379,SPEC-0379,2026-07-27T10:24:00,STALE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0380,CASE-0380,SPEC-0380,2026-07-23T13:28:00,STALE,0.87,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0381,CASE-0381,SPEC-0381,2026-08-04T19:58:00,AVAILABLE,0.88,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0382,CASE-0382,SPEC-0382,2026-07-24T23:44:00,STALE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0383,CASE-0383,SPEC-0383,2026-07-20T18:24:00,STALE,0.97,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0385,CASE-0385,SPEC-0385,2026-07-30T10:00:00,STALE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0386,CASE-0386,SPEC-0386,2026-07-30T14:40:00,STALE,0.98,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0387,CASE-0387,SPEC-0387,2026-08-24T16:38:00,AVAILABLE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0388,CASE-0388,SPEC-0388,2026-07-11T10:00:00,STALE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0389,CASE-0389,SPEC-0389,2026-08-20T16:43:00,AVAILABLE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0390,CASE-0390,SPEC-0390,2026-07-30T18:37:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0391,CASE-0391,SPEC-0391,2026-08-18T16:01:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0392,CASE-0392,SPEC-0392,2026-07-25T12:26:00,STALE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0393,CASE-0393,SPEC-0393,2026-08-08T20:23:00,AVAILABLE,0.87,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0395,CASE-0395,SPEC-0395,2026-07-21T12:15:00,STALE,0.9,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0396,CASE-0396,SPEC-0396,2026-07-11T10:00:00,STALE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0397,CASE-0397,SPEC-0397,2026-09-06T12:46:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0398,CASE-0398,SPEC-0398,2026-07-25T11:39:00,STALE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0399,CASE-0399,SPEC-0399,2026-08-21T11:35:00,AVAILABLE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0400,CASE-0400,SPEC-0400,2026-07-24T23:37:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0402,CASE-0402,SPEC-0402,2026-07-29T10:00:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0403,CASE-0403,SPEC-0403,2026-08-30T21:04:00,AVAILABLE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0404,CASE-0404,SPEC-0404,2026-07-12T10:00:00,STALE,0.87,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0405,CASE-0405,SPEC-0405,2026-07-25T23:53:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0406,CASE-0406,SPEC-0406,2026-07-25T19:39:00,STALE,0.89,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0407,CASE-0407,SPEC-0407,2026-07-21T10:00:00,STALE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0408,CASE-0408,SPEC-0408,2026-08-02T17:38:00,STALE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0409,CASE-0409,SPEC-0409,2026-08-19T21:43:00,AVAILABLE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0410,CASE-0410,SPEC-0410,2026-07-23T02:44:00,STALE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0411,CASE-0411,SPEC-0411,2026-08-16T17:46:00,AVAILABLE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0412,CASE-0412,SPEC-0412,2026-08-19T22:23:00,AVAILABLE,0.86,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0414,CASE-0414,SPEC-0414,2026-08-18T11:24:00,AVAILABLE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0415,CASE-0415,SPEC-0415,2026-07-21T21:48:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0416,CASE-0416,SPEC-0416,2026-07-20T10:00:00,STALE,0.95,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0417,CASE-0417,SPEC-0417,2026-07-21T10:00:00,STALE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0419,CASE-0419,SPEC-0419,2026-09-08T22:47:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0420,CASE-0420,SPEC-0420,2026-08-17T21:34:00,AVAILABLE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0421,CASE-0421,SPEC-0421,2026-08-24T04:46:00,AVAILABLE,0.9,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0422,CASE-0422,SPEC-0422,2026-09-04T22:39:00,AVAILABLE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0423,CASE-0423,SPEC-0423,2026-07-26T22:50:00,STALE,0.91,Bacterial 16S rRNA Broad-Range Microbial PCR,Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0424,CASE-0424,SPEC-0424,2026-08-14T04:25:00,AVAILABLE,0.94,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0425,CASE-0425,SPEC-0425,2026-07-28T19:32:00,STALE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0427,CASE-0427,SPEC-0427,2026-09-07T19:38:00,AVAILABLE,0.89,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0428,CASE-0428,SPEC-0428,2026-09-04T18:20:00,AVAILABLE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0429,CASE-0429,SPEC-0429,2026-08-15T18:33:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0430,CASE-0430,SPEC-0430,2026-08-13T20:19:00,AVAILABLE,0.9,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0431,CASE-0431,SPEC-0431,2026-08-19T22:02:00,AVAILABLE,0.97,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0432,CASE-0432,SPEC-0432,2026-07-22T12:52:00,STALE,0.98,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0433,CASE-0433,SPEC-0433,2026-07-16T10:00:00,STALE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0434,CASE-0434,SPEC-0434,2026-08-30T17:41:00,AVAILABLE,0.94,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0435,CASE-0435,SPEC-0435,2026-07-22T10:00:00,STALE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0436,CASE-0436,SPEC-0436,2026-08-01T15:44:00,STALE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0437,CASE-0437,SPEC-0437,2026-08-10T02:29:00,AVAILABLE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0438,CASE-0438,SPEC-0438,2026-08-29T16:28:00,AVAILABLE,0.95,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0439,CASE-0439,SPEC-0439,2026-08-18T21:47:00,AVAILABLE,0.85,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0440,CASE-0440,SPEC-0440,2026-08-26T13:10:00,AVAILABLE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0441,CASE-0441,SPEC-0441,2026-07-23T10:00:00,STALE,0.9,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0442,CASE-0442,SPEC-0442,2026-08-19T01:51:00,AVAILABLE,0.85,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0444,CASE-0444,SPEC-0444,2026-09-04T20:18:00,AVAILABLE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0445,CASE-0445,SPEC-0445,2026-08-26T18:40:00,AVAILABLE,0.97,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0446,CASE-0446,SPEC-0446,2026-07-22T22:35:00,STALE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0447,CASE-0447,SPEC-0447,2026-09-07T13:08:00,AVAILABLE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0449,CASE-0449,SPEC-0449,2026-07-29T14:01:00,STALE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0450,CASE-0450,SPEC-0450,2026-07-11T10:00:00,STALE,0.86,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0451,CASE-0451,SPEC-0451,2026-07-30T10:00:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0452,CASE-0452,SPEC-0452,2026-07-19T10:00:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0453,CASE-0453,SPEC-0453,2026-09-01T16:30:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0454,CASE-0454,SPEC-0454,2026-07-11T10:00:00,STALE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0455,CASE-0455,SPEC-0455,2026-08-29T21:29:00,AVAILABLE,0.85,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0456,CASE-0456,SPEC-0456,2026-07-29T18:45:00,STALE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,Pathogenic sequence variants absent across targeted loci.
+MOL-0457,CASE-0457,SPEC-0457,2026-09-02T20:06:00,AVAILABLE,0.86,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0458,CASE-0458,SPEC-0458,2026-07-21T18:36:00,STALE,0.97,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0459,CASE-0459,SPEC-0459,2026-07-28T10:00:00,STALE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0460,CASE-0460,SPEC-0460,2026-07-29T01:11:00,STALE,0.91,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0461,CASE-0461,SPEC-0461,2026-08-30T11:01:00,AVAILABLE,0.88,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0462,CASE-0462,SPEC-0462,2026-08-23T00:05:00,AVAILABLE,0.93,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0463,CASE-0463,SPEC-0463,2026-07-26T23:09:00,STALE,0.92,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0464,CASE-0464,SPEC-0464,2026-08-03T01:02:00,STALE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0465,CASE-0465,SPEC-0465,2026-07-29T22:14:00,STALE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0466,CASE-0466,SPEC-0466,2026-08-03T14:48:00,STALE,0.9,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0467,CASE-0467,SPEC-0467,2026-07-31T15:05:00,STALE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0468,CASE-0468,SPEC-0468,2026-08-04T21:21:00,AVAILABLE,0.94,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0469,CASE-0469,SPEC-0469,2026-07-28T10:00:00,STALE,0.89,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0470,CASE-0470,SPEC-0470,2026-07-20T21:25:00,STALE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0471,CASE-0471,SPEC-0471,2026-08-20T18:02:00,AVAILABLE,0.89,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0472,CASE-0472,SPEC-0472,2026-08-06T20:17:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0474,CASE-0474,SPEC-0474,2026-08-19T19:37:00,AVAILABLE,0.87,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0476,CASE-0476,SPEC-0476,2026-07-25T15:41:00,STALE,0.91,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0477,CASE-0477,SPEC-0477,2026-08-04T19:34:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0478,CASE-0478,SPEC-0478,2026-08-24T19:50:00,AVAILABLE,0.94,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0480,CASE-0480,SPEC-0480,2026-08-16T16:41:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Pathogenic sequence variants absent across targeted loci.
+MOL-0481,CASE-0481,SPEC-0481,2026-08-09T11:23:00,AVAILABLE,0.93,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0482,CASE-0482,SPEC-0482,2026-07-18T10:00:00,STALE,0.88,Bacterial 16S rRNA Broad-Range Microbial PCR,High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0483,CASE-0483,SPEC-0483,2026-09-04T17:15:00,AVAILABLE,0.96,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0484,CASE-0484,SPEC-0484,2026-08-27T09:08:00,AVAILABLE,0.95,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0485,CASE-0485,SPEC-0485,2026-07-20T17:35:00,STALE,0.88,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Positive for HSV-1 viral DNA (Ct value 22.4); marked elevation of IL-6 and TNF-alpha.
+MOL-0486,CASE-0486,SPEC-0486,2026-07-28T20:21:00,STALE,0.89,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),"Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0487,CASE-0487,SPEC-0487,2026-07-26T01:23:00,STALE,0.98,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0489,CASE-0489,SPEC-0489,2026-07-25T21:37:00,STALE,0.96,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",High copy-number CMV DNA detected; prominent elevation of pro-inflammatory cytokines.
+MOL-0490,CASE-0490,SPEC-0490,2026-08-09T17:33:00,AVAILABLE,0.92,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.
+MOL-0491,CASE-0491,SPEC-0491,2026-08-06T21:21:00,AVAILABLE,0.93,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)",Pathogenic sequence variants absent across targeted loci.
+MOL-0492,CASE-0492,SPEC-0492,2026-09-02T20:26:00,AVAILABLE,0.91,"Tear-Film Cytokine Biomarker Panel (IL-6, TNF-alpha, VEGF)","Heterozygous pathogenic missense variant detected in ABCA4 (c.5882G>A, p.G1961E)."
+MOL-0495,CASE-0495,SPEC-0495,2026-08-02T17:07:00,STALE,0.96,Bacterial 16S rRNA Broad-Range Microbial PCR,Target pathogen DNA not detected below limit of quantification; cytokine markers normal.
+MOL-0497,CASE-0497,SPEC-0497,2026-08-13T19:06:00,AVAILABLE,0.96,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0498,CASE-0498,SPEC-0498,2026-08-01T21:36:00,STALE,0.92,Targeted Retinal Dystrophy Genetic Screen (25-gene panel),Pathogenic sequence variants absent across targeted loci.
+MOL-0499,CASE-0499,SPEC-0499,2026-07-27T10:00:00,STALE,0.98,"Ocular Multiplex Viral PCR (HSV-1, HSV-2, VZV, CMV)",Negative for viral genomic DNA; baseline inflammatory cytokine profile.

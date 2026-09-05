@@ -1,0 +1,51 @@
+case_id,failure_mode,baseline_time_seconds,eyesync_time_seconds,time_saved_seconds,time_saved_percentage,evidence_completeness,baseline_errors,eyesync_errors
+CASE-0001,Golden (Complete concordant),282.0,42.3,239.7,85.0,100.0,0,0
+CASE-0002,Golden (Complete concordant),269.8,51.5,218.3,80.9,100.0,0,0
+CASE-0003,Golden (Complete concordant),266.2,53.4,212.8,79.9,100.0,0,0
+CASE-0004,Golden (Complete concordant),264.0,39.1,224.9,85.2,100.0,0,0
+CASE-0005,Golden (Complete concordant),295.2,37.2,258.0,87.4,100.0,0,0
+CASE-0006,Golden (Complete concordant),297.9,36.3,261.6,87.8,100.0,0,0
+CASE-0007,Golden (Complete concordant),285.1,43.1,242.0,84.9,100.0,0,0
+CASE-0008,Golden (Complete concordant),306.2,48.3,257.9,84.2,100.0,0,0
+CASE-0009,Golden (Complete concordant),303.9,44.2,259.7,85.5,100.0,0,0
+CASE-0010,Golden (Complete concordant),320.9,41.3,279.6,87.1,100.0,0,0
+CASE-0011,Golden (Complete concordant),298.5,44.1,254.4,85.2,100.0,0,0
+CASE-0012,Golden (Complete concordant),240.2,36.3,203.9,84.9,100.0,0,0
+CASE-0013,Golden (Complete concordant),275.4,46.5,228.9,83.1,100.0,0,0
+CASE-0014,Golden (Complete concordant),224.4,48.1,176.3,78.6,100.0,0,0
+CASE-0015,Missing Molecular Evidence,352.5,55.3,297.2,84.3,80.0,1,0
+CASE-0016,Missing Molecular Evidence,312.9,65.7,247.2,79.0,80.0,1,0
+CASE-0017,Missing Molecular Evidence,327.7,56.7,271.0,82.7,80.0,1,0
+CASE-0018,Missing Molecular Evidence,364.3,61.0,303.3,83.3,80.0,1,0
+CASE-0019,Missing Molecular Evidence,361.0,53.1,307.9,85.3,80.0,1,0
+CASE-0020,Missing Molecular Evidence,338.8,56.9,281.9,83.2,80.0,1,0
+CASE-0021,Missing Molecular Evidence,342.8,57.3,285.5,83.3,80.0,1,0
+CASE-0022,Missing Molecular Evidence,363.5,61.9,301.6,83.0,80.0,1,0
+CASE-0023,Low-Quality Imaging,310.2,48.7,261.5,84.3,90.0,0,0
+CASE-0024,Low-Quality Imaging,274.2,60.9,213.3,77.8,90.0,1,0
+CASE-0025,Low-Quality Imaging,375.5,57.5,318.0,84.7,90.0,0,0
+CASE-0026,Low-Quality Imaging,344.0,57.5,286.5,83.3,90.0,0,0
+CASE-0027,Low-Quality Imaging,293.8,47.2,246.6,83.9,90.0,1,0
+CASE-0028,Low-Quality Imaging,342.3,50.7,291.6,85.2,90.0,0,0
+CASE-0029,Low-Quality Imaging,334.8,64.0,270.8,80.9,90.0,1,0
+CASE-0030,Stale Molecular Result,297.2,59.6,237.6,79.9,100.0,1,0
+CASE-0031,Stale Molecular Result,298.6,54.3,244.3,81.8,100.0,1,0
+CASE-0032,Stale Molecular Result,286.3,56.5,229.8,80.3,100.0,1,0
+CASE-0033,Stale Molecular Result,307.7,56.4,251.3,81.7,100.0,1,0
+CASE-0034,Stale Molecular Result,343.7,49.2,294.5,85.7,100.0,1,0
+CASE-0035,Stale Molecular Result,306.9,48.6,258.3,84.2,100.0,1,0
+CASE-0036,Stale Molecular Result,333.4,56.9,276.5,82.9,100.0,1,0
+CASE-0037,Conflicting Evidence,369.6,55.8,313.8,84.9,100.0,0,0
+CASE-0038,Conflicting Evidence,362.0,67.2,294.8,81.4,100.0,1,0
+CASE-0039,Conflicting Evidence,351.6,50.4,301.2,85.7,100.0,1,0
+CASE-0040,Conflicting Evidence,373.6,69.4,304.2,81.4,100.0,0,0
+CASE-0041,Conflicting Evidence,334.0,61.0,273.0,81.7,100.0,0,0
+CASE-0042,Conflicting Evidence,376.8,46.8,330.0,87.6,100.0,0,0
+CASE-0043,Conflicting Evidence,419.5,66.6,352.9,84.1,100.0,0,0
+CASE-0044,Broken Specimen Lineage,375.8,60.4,315.4,83.9,70.0,2,0
+CASE-0045,Broken Specimen Lineage,405.6,65.2,340.4,83.9,70.0,2,0
+CASE-0046,Broken Specimen Lineage,385.0,64.0,321.0,83.4,70.0,2,0
+CASE-0047,Broken Specimen Lineage,326.6,59.9,266.7,81.7,70.0,2,0
+CASE-0048,Broken Specimen Lineage,353.4,67.5,285.9,80.9,70.0,2,0
+CASE-0049,Broken Specimen Lineage,393.7,47.7,346.0,87.9,70.0,2,0
+CASE-0050,Broken Specimen Lineage,398.3,57.0,341.3,85.7,70.0,2,0
