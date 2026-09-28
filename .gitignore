@@ -25,4 +25,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Environment and Secrets (Never commit secrets to git)
+.env
+*.env
+!.env.example
 frontend/.env
+frontend/.env.local

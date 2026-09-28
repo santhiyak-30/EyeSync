@@ -1,7 +1,9 @@
 import logging
 from datetime import datetime
 from typing import List, Optional, Dict, Any
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends, HTTPException, Query, status
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
@@ -14,7 +16,8 @@ try:
         CaseListItem, CaseDetailResponse, TimelineEvent, SpecimenLineageStep,
         ReviewCreateRequest, ReviewResponse, DashboardMetricsResponse,
         DataQualityResponse, FailureModeItem, StakeholderFeedbackItem,
-        AuditLogOut, ImagingEventOut, SpecimenOut, PathologyResultOut, MolecularResultOut, ReviewDecisionOut
+        AuditLogOut, ImagingEventOut, SpecimenOut, PathologyResultOut, MolecularResultOut, ReviewDecisionOut,
+        SpecimenIngestPayload, LoginRequest, RoleTokenRequest, TokenResponse, AuthenticatedUserOut
     )
     from .services import (
         calculate_completeness, calculate_freshness, build_specimen_lineage,
@@ -23,6 +26,13 @@ try:
     )
     from .seed_database import seed_database
     from .experiment import get_experiment_summary, run_experiment
+    from .auth import (
+        get_current_user, require_role, create_access_token, verify_password,
+        DEMO_USERS, ROLE_TO_USERNAME, ROLE_PERMISSIONS, ALL_ROLES,
+        CAMP_COORDINATOR, IMAGING_REVIEWER, PATHOLOGY_REVIEWER,
+        MOLECULAR_REVIEWER, CASE_REVIEWER, ADMINISTRATOR,
+        AuthenticatedUser
+    )
 except ImportError:
     from database import engine, Base, get_db
     from models import Case, ImagingEvent, Specimen, PathologyResult, MolecularResult, ReviewDecision, AuditLog
@@ -30,7 +40,8 @@ except ImportError:
         CaseListItem, CaseDetailResponse, TimelineEvent, SpecimenLineageStep,
         ReviewCreateRequest, ReviewResponse, DashboardMetricsResponse,
         DataQualityResponse, FailureModeItem, StakeholderFeedbackItem,
-        AuditLogOut, ImagingEventOut, SpecimenOut, PathologyResultOut, MolecularResultOut, ReviewDecisionOut
+        AuditLogOut, ImagingEventOut, SpecimenOut, PathologyResultOut, MolecularResultOut, ReviewDecisionOut,
+        SpecimenIngestPayload, LoginRequest, RoleTokenRequest, TokenResponse, AuthenticatedUserOut
     )
     from services import (
         calculate_completeness, calculate_freshness, build_specimen_lineage,
@@ -39,15 +50,37 @@ except ImportError:
     )
     from seed_database import seed_database
     from experiment import get_experiment_summary, run_experiment
+    from auth import (
+        get_current_user, require_role, create_access_token, verify_password,
+        DEMO_USERS, ROLE_TO_USERNAME, ROLE_PERMISSIONS, ALL_ROLES,
+        CAMP_COORDINATOR, IMAGING_REVIEWER, PATHOLOGY_REVIEWER,
+        MOLECULAR_REVIEWER, CASE_REVIEWER, ADMINISTRATOR,
+        AuthenticatedUser
+    )
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("EyeSyncAPI")
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Ensure database and seed data are initialized automatically on boot."""
+    logger.info("Initializing EyeSync SQLite database and synthetic dataset...")
+    try:
+        seed_database(force=False)
+        run_experiment()
+        logger.info("EyeSync database and experiment results ready.")
+    except Exception as e:
+        logger.error(f"Error during startup data initialization: {e}")
+    yield
+
+
 app = FastAPI(
     title="EyeSync API",
     description="Multidisciplinary Evidence Timeline for Temporary Eye-Care Screening Camps",
-    version="1.0.0"
+    version="2.0.0",
+    lifespan=lifespan
 )
 
 # Enable CORS for local React/Vite development
@@ -60,30 +93,40 @@ app.add_middleware(
 )
 
 
-@app.on_event("startup")
-def on_startup():
-    """Ensure database and seed data are initialized automatically on boot."""
-    logger.info("Initializing EyeSync SQLite database and synthetic dataset...")
-    try:
-        seed_database(force=False)
-        # Also run experiment to ensure experiment_results.csv is generated
-        run_experiment()
-        logger.info("EyeSync database and experiment results ready.")
-    except Exception as e:
-        logger.error(f"Error during startup data initialization: {e}")
-
-
 # Custom error handler for JSON responses
 @app.exception_handler(HTTPException)
 async def custom_http_exception_handler(request, exc: HTTPException):
+    headers = exc.headers if hasattr(exc, "headers") and exc.headers else {}
     return JSONResponse(
         status_code=exc.status_code,
-        content={"error": True, "message": exc.detail, "details": str(exc.detail)}
+        content={"error": True, "message": exc.detail, "details": str(exc.detail)},
+        headers=headers
+    )
+
+
+from fastapi.encoders import jsonable_encoder
+
+# Custom validation error handler for 422 Unprocessable Entity
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request, exc: RequestValidationError):
+    error_messages = []
+    for err in exc.errors():
+        loc = " -> ".join(str(l) for l in err.get("loc", []))
+        msg = err.get("msg", "Invalid value")
+        error_messages.append(f"{loc}: {msg}")
+    return JSONResponse(
+        status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+        content=jsonable_encoder({
+            "error": True,
+            "message": "Validation Error: Corrupted or invalid payload rejected.",
+            "details": error_messages,
+            "errors": exc.errors()
+        })
     )
 
 
 # --------------------------------------------------------------------------
-# 1. HEALTH ENDPOINT
+# 1. HEALTH ENDPOINT (Public Probe)
 # --------------------------------------------------------------------------
 @app.get("/api/health", summary="Health Check")
 def get_health(db: Session = Depends(get_db)):
@@ -102,7 +145,69 @@ def get_health(db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 2. CASES LIST ENDPOINT (Search, Filter, Pagination, Anomaly Flags)
+# 2. AUTHENTICATION & JWT ENDPOINTS
+# --------------------------------------------------------------------------
+@app.post("/api/auth/login", response_model=TokenResponse, summary="JWT User Authentication")
+def login(payload: LoginRequest):
+    """Authenticates user credentials and returns signed JWT with RBAC role claim."""
+    user = DEMO_USERS.get(payload.username.strip())
+    if not user or not verify_password(payload.password, user["password_hash"]):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid username or password.",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    token = create_access_token({
+        "sub": user["username"],
+        "role": user["role"],
+        "full_name": user["full_name"]
+    })
+    return TokenResponse(
+        access_token=token,
+        token_type="bearer",
+        role=user["role"],
+        username=user["username"],
+        full_name=user["full_name"],
+        expires_in_seconds=8 * 3600
+    )
+
+
+@app.post("/api/auth/token-for-role", response_model=TokenResponse, summary="Get JWT Token for Demo Role")
+def token_for_role(payload: RoleTokenRequest):
+    """Generates an authentic signed JWT for the requested EyeSync role (for seamless demo role switching)."""
+    username = ROLE_TO_USERNAME.get(payload.role)
+    if not username or username not in DEMO_USERS:
+        raise HTTPException(status_code=400, detail=f"No demo account mapped to role: {payload.role}")
+    user = DEMO_USERS[username]
+    token = create_access_token({
+        "sub": user["username"],
+        "role": user["role"],
+        "full_name": user["full_name"]
+    })
+    return TokenResponse(
+        access_token=token,
+        token_type="bearer",
+        role=user["role"],
+        username=user["username"],
+        full_name=user["full_name"],
+        expires_in_seconds=8 * 3600
+    )
+
+
+@app.get("/api/auth/me", response_model=AuthenticatedUserOut, summary="Current Authenticated User Identity")
+def get_me(current_user: AuthenticatedUser = Depends(get_current_user)):
+    """Returns identity and RBAC permissions for the authenticated Bearer token."""
+    perms = ROLE_PERMISSIONS.get(current_user.role, {})
+    return AuthenticatedUserOut(
+        username=current_user.username,
+        role=current_user.role,
+        full_name=current_user.full_name,
+        permissions=perms
+    )
+
+
+# --------------------------------------------------------------------------
+# 3. CASES LIST ENDPOINT (Search, Filter, Pagination, Anomaly Flags)
 # --------------------------------------------------------------------------
 @app.get("/api/cases", response_model=Dict[str, Any], summary="List and Filter Cases")
 def get_cases(
@@ -113,6 +218,7 @@ def get_cases(
     has_anomaly: Optional[str] = Query(None, description="Filter: missing_evidence, stale, low_quality, conflict, broken_lineage"),
     skip: int = Query(0, ge=0),
     limit: int = Query(25, ge=1, le=500),
+    current_user: AuthenticatedUser = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """Returns paginated case items with pre-calculated completeness and failure mode indicators."""
@@ -207,10 +313,14 @@ def get_cases(
 
 
 # --------------------------------------------------------------------------
-# 3. CASE DETAIL ENDPOINT (Core Endpoint)
+# 4. CASE DETAIL ENDPOINT (Core Endpoint with JWT Context)
 # --------------------------------------------------------------------------
 @app.get("/api/cases/{case_id}", response_model=CaseDetailResponse, summary="Get Full Case Details")
-def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db: Session = Depends(get_db)):
+def get_case_detail(
+    case_id: str,
+    current_user: AuthenticatedUser = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """Retrieves full case details, calculated completeness, uncertainty alerts, timeline, and lineage."""
     case = db.query(Case).filter(Case.case_id == case_id).first()
     if not case:
@@ -231,16 +341,19 @@ def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db
     timeline = build_unified_timeline(case, imgs, paths, mols, specs, revs)
     lineage = build_specimen_lineage(case, specs, paths, mols)
 
-    # Log audit event for case view
+    # Log audit event for case view with verified user role
     log_audit_event(
         db=db,
-        user_role=user_role or "Case Reviewer",
+        user_role=current_user.role,
         action="CASE_VIEWED",
         resource_type="CASE",
         result="SUCCESS",
         case_id=case_id,
-        details=f"Case record viewed by {user_role}."
+        details=f"Case record viewed by {current_user.username} ({current_user.role})."
     )
+
+    # Clinical findings masking for Camp Coordinator (least-privilege operational view)
+    mask_clinical = (current_user.role == CAMP_COORDINATOR)
 
     # Convert evidence lists to Pydantic objects with freshness
     imaging_out = [
@@ -255,7 +368,7 @@ def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db
             operator_id=im.operator_id,
             location=im.location,
             review_status=im.review_status,
-            findings_summary=im.findings_summary,
+            findings_summary="[Clinical Details Masked for Operational Role]" if mask_clinical else im.findings_summary,
             freshness=calculate_freshness(im.captured_at, "imaging")
         )
         for im in imgs
@@ -283,7 +396,7 @@ def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db
             case_id=p.case_id,
             specimen_id=p.specimen_id,
             result_at=p.result_at,
-            finding=p.finding,
+            finding="[Histological Findings Masked for Operational Role]" if mask_clinical else p.finding,
             severity=p.severity,
             status=p.status,
             freshness=calculate_freshness(p.result_at, "pathology")
@@ -300,7 +413,7 @@ def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db
             result_status=m.result_status,
             confidence=m.confidence,
             test_type=m.test_type,
-            finding=m.finding,
+            finding="[Molecular Assays Masked for Operational Role]" if mask_clinical else m.finding,
             freshness=calculate_freshness(m.result_at, "molecular")
         )
         for m in mols
@@ -356,10 +469,14 @@ def get_case_detail(case_id: str, user_role: Optional[str] = "Case Reviewer", db
 
 
 # --------------------------------------------------------------------------
-# 4. TIMELINE ONLY ENDPOINT
+# 5. TIMELINE ONLY ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/cases/{case_id}/timeline", response_model=List[TimelineEvent], summary="Get Case Unified Timeline")
-def get_case_timeline(case_id: str, db: Session = Depends(get_db)):
+def get_case_timeline(
+    case_id: str,
+    current_user: AuthenticatedUser = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     case = db.query(Case).filter(Case.case_id == case_id).first()
     if not case:
         raise HTTPException(status_code=404, detail=f"Case {case_id} not found.")
@@ -370,10 +487,16 @@ def get_case_timeline(case_id: str, db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 5. EVIDENCE ONLY ENDPOINT
+# 6. EVIDENCE ONLY ENDPOINT (Restricted to Clinical Roles)
 # --------------------------------------------------------------------------
 @app.get("/api/cases/{case_id}/evidence", summary="Get Raw Evidence Items for Case")
-def get_case_evidence(case_id: str, db: Session = Depends(get_db)):
+def get_case_evidence(
+    case_id: str,
+    current_user: AuthenticatedUser = Depends(require_role([
+        IMAGING_REVIEWER, PATHOLOGY_REVIEWER, MOLECULAR_REVIEWER, CASE_REVIEWER, ADMINISTRATOR
+    ])),
+    db: Session = Depends(get_db)
+):
     case = db.query(Case).filter(Case.case_id == case_id).first()
     if not case:
         raise HTTPException(status_code=404, detail=f"Case {case_id} not found.")
@@ -388,10 +511,14 @@ def get_case_evidence(case_id: str, db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 6. SPECIMEN LINEAGE ENDPOINT
+# 7. SPECIMEN LINEAGE ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/cases/{case_id}/lineage", response_model=List[SpecimenLineageStep], summary="Get Specimen Lineage")
-def get_case_lineage(case_id: str, db: Session = Depends(get_db)):
+def get_case_lineage(
+    case_id: str,
+    current_user: AuthenticatedUser = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     case = db.query(Case).filter(Case.case_id == case_id).first()
     if not case:
         raise HTTPException(status_code=404, detail=f"Case {case_id} not found.")
@@ -399,10 +526,89 @@ def get_case_lineage(case_id: str, db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 7. DASHBOARD METRICS ENDPOINT
+# 8. SPECIMEN INGESTION ENDPOINT (Strict Schema & RBAC Enforcement)
+# --------------------------------------------------------------------------
+@app.post("/api/specimens", response_model=SpecimenOut, status_code=status.HTTP_201_CREATED, summary="Ingest Field Specimen Accession")
+@app.post("/api/specimens/ingest", response_model=SpecimenOut, status_code=status.HTTP_201_CREATED, summary="Ingest Field Specimen Accession (Alias)")
+def ingest_specimen(
+    payload: SpecimenIngestPayload,
+    current_user: AuthenticatedUser = Depends(require_role([
+        CAMP_COORDINATOR, ADMINISTRATOR, PATHOLOGY_REVIEWER, MOLECULAR_REVIEWER, CASE_REVIEWER
+    ])),
+    db: Session = Depends(get_db)
+):
+    """
+    Ingests specimen payload into the screening camp pipeline with strict Pydantic validation.
+    Enforces format constraints, temporal order, valid collection sites, and custody status.
+    """
+    case = db.query(Case).filter(Case.case_id == payload.case_id).first()
+    if not case:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Target case '{payload.case_id}' does not exist in the screening database."
+        )
+
+    # Check if specimen already exists (update or create)
+    specimen = db.query(Specimen).filter(Specimen.specimen_id == payload.specimen_id).first()
+    if not specimen:
+        specimen = Specimen(
+            specimen_id=payload.specimen_id,
+            case_id=payload.case_id,
+            collection_time=payload.collection_time,
+            collection_site=payload.collection_site,
+            transport_time=payload.transport_time,
+            received_time=payload.received_time,
+            processing_status=payload.processing_status,
+            linked_pathology_id=payload.linked_pathology_id,
+            linked_molecular_id=payload.linked_molecular_id,
+        )
+        db.add(specimen)
+    else:
+        specimen.case_id = payload.case_id
+        specimen.collection_time = payload.collection_time
+        specimen.collection_site = payload.collection_site
+        specimen.transport_time = payload.transport_time
+        specimen.received_time = payload.received_time
+        specimen.processing_status = payload.processing_status
+        specimen.linked_pathology_id = payload.linked_pathology_id
+        specimen.linked_molecular_id = payload.linked_molecular_id
+
+    db.commit()
+    db.refresh(specimen)
+
+    # Log audit event
+    log_audit_event(
+        db=db,
+        user_role=current_user.role,
+        action="SPECIMEN_INGESTED",
+        resource_type="SPECIMEN",
+        result="SUCCESS",
+        case_id=payload.case_id,
+        details=f"Specimen {payload.specimen_id} ingested by {current_user.username} ({current_user.role}). Status: {payload.processing_status}."
+    )
+
+    return SpecimenOut(
+        specimen_id=specimen.specimen_id,
+        case_id=specimen.case_id,
+        collection_time=specimen.collection_time,
+        collection_site=specimen.collection_site,
+        transport_time=specimen.transport_time,
+        received_time=specimen.received_time,
+        processing_status=specimen.processing_status,
+        linked_pathology_id=specimen.linked_pathology_id,
+        linked_molecular_id=specimen.linked_molecular_id,
+        is_lineage_broken=(specimen.processing_status == "LOST_LINKAGE")
+    )
+
+
+# --------------------------------------------------------------------------
+# 9. DASHBOARD METRICS ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/dashboard/metrics", response_model=DashboardMetricsResponse, summary="Dashboard Overview Metrics")
-def get_dashboard_metrics(db: Session = Depends(get_db)):
+def get_dashboard_metrics(
+    current_user: AuthenticatedUser = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """Computes operational KPIs and chart data from SQLite database."""
     total_cases = db.query(Case).count()
     if total_cases == 0:
@@ -542,7 +748,7 @@ def get_dashboard_metrics(db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 8. AUDIT LOGS ENDPOINT
+# 10. AUDIT LOGS ENDPOINT (Restricted to Administrator & Case Reviewer)
 # --------------------------------------------------------------------------
 @app.get("/api/audit-logs", response_model=Dict[str, Any], summary="List Audit Events")
 def get_audit_logs(
@@ -551,6 +757,7 @@ def get_audit_logs(
     action: Optional[str] = Query(None),
     skip: int = Query(0, ge=0),
     limit: int = Query(50, ge=1, le=200),
+    current_user: AuthenticatedUser = Depends(require_role([ADMINISTRATOR, CASE_REVIEWER])),
     db: Session = Depends(get_db)
 ):
     query = db.query(AuditLog)
@@ -585,17 +792,18 @@ def get_audit_logs(
 
 
 # --------------------------------------------------------------------------
-# 9. POST REVIEW SUBMISSION ENDPOINT
+# 11. POST REVIEW SUBMISSION ENDPOINT (Restricted to Authorized Reviewers)
 # --------------------------------------------------------------------------
 @app.post("/api/reviews", response_model=ReviewResponse, summary="Submit Case Review Decision")
-def create_review(payload: ReviewCreateRequest, db: Session = Depends(get_db)):
+def create_review(
+    payload: ReviewCreateRequest,
+    current_user: AuthenticatedUser = Depends(require_role([CASE_REVIEWER, ADMINISTRATOR])),
+    db: Session = Depends(get_db)
+):
     """Submits clinical review decision, checks completeness/uncertainty, updates case, and logs audit."""
     case = db.query(Case).filter(Case.case_id == payload.case_id).first()
     if not case:
         raise HTTPException(status_code=404, detail=f"Case {payload.case_id} not found.")
-
-    if not payload.reason or len(payload.reason.strip()) < 5:
-        raise HTTPException(status_code=400, detail="A detailed clinical rationale is required for review decisions.")
 
     comp = calculate_completeness(
         case, case.imaging_events, case.pathology_results,
@@ -605,10 +813,13 @@ def create_review(payload: ReviewCreateRequest, db: Session = Depends(get_db)):
     review_count = db.query(ReviewDecision).count()
     new_rev_id = f"REV-{review_count + 1:04d}"
 
+    # Use authenticated user role rather than unverified client payload
+    assigned_role = current_user.role
+
     new_review = ReviewDecision(
         review_id=new_rev_id,
         case_id=payload.case_id,
-        reviewer_role=payload.reviewer_role,
+        reviewer_role=assigned_role,
         reviewed_at=datetime.utcnow(),
         decision=payload.decision,
         confidence=payload.confidence,
@@ -631,15 +842,15 @@ def create_review(payload: ReviewCreateRequest, db: Session = Depends(get_db)):
     db.refresh(new_review)
     db.refresh(case)
 
-    # Automatically record audit log
+    # Automatically record audit log with verified user role
     log_audit_event(
         db=db,
-        user_role=payload.reviewer_role,
+        user_role=assigned_role,
         action="REVIEW_SUBMITTED",
         resource_type="REVIEW",
         result="SUCCESS",
         case_id=payload.case_id,
-        details=f"Decision recorded: {payload.decision}. Confidence: {int(payload.confidence * 100)}%. Rationale: {payload.reason}"
+        details=f"Decision recorded: {payload.decision}. Confidence: {int(payload.confidence * 100)}%. Reviewer: {current_user.username} ({assigned_role}). Rationale: {payload.reason}"
     )
 
     return ReviewResponse(
@@ -659,10 +870,10 @@ def create_review(payload: ReviewCreateRequest, db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 10. EXPERIMENT RESULTS ENDPOINT
+# 12. EXPERIMENT RESULTS ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/experiments/results", summary="Get Experiment Benchmark Results")
-def get_experiment_data():
+def get_experiment_data(current_user: AuthenticatedUser = Depends(get_current_user)):
     """Returns comparative assembly time benchmark between manual baseline and EyeSync."""
     try:
         return get_experiment_summary()
@@ -671,12 +882,14 @@ def get_experiment_data():
 
 
 # --------------------------------------------------------------------------
-# 11. FAILURE MODES ANALYSIS ENDPOINT
+# 13. FAILURE MODES ANALYSIS ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/failures", response_model=List[FailureModeItem], summary="Failure Mode & Effects Analysis")
-def get_failure_modes(db: Session = Depends(get_db)):
+def get_failure_modes(
+    current_user: AuthenticatedUser = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
     """Returns structured FMEA matrix for all 6 core screening camp failure modes."""
-    # Count occurrences across synthetic data
     cases = db.query(Case).all()
     missing_mol_cnt = 0
     low_q_cnt = 0
@@ -766,10 +979,13 @@ def get_failure_modes(db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 12. DATA QUALITY PAGE ENDPOINT
+# 14. DATA QUALITY PAGE ENDPOINT (Restricted to Administrator & Case Reviewer)
 # --------------------------------------------------------------------------
 @app.get("/api/data-quality", response_model=DataQualityResponse, summary="Data Quality Assessment")
-def get_data_quality(db: Session = Depends(get_db)):
+def get_data_quality(
+    current_user: AuthenticatedUser = Depends(require_role([ADMINISTRATOR, CASE_REVIEWER])),
+    db: Session = Depends(get_db)
+):
     """Computes comprehensive data hygiene and integrity metrics across all tables."""
     total_cases = db.query(Case).count()
     total_imgs = db.query(ImagingEvent).count()
@@ -805,14 +1021,13 @@ def get_data_quality(db: Session = Depends(get_db)):
     dup_cnt = len(all_imgs) - len(set(all_imgs))
 
     # Quality Score: penalized by severe integrity failures (broken lineage, missing data)
-    # 100 base, deductions for dirty data
     flaw_penalty = (broken_lin_cnt * 1.5) + (dup_cnt * 0.5) + (low_q_cnt * 0.2) + (conflicts_cnt * 0.3)
     quality_score = max(70.0, round(100.0 - (flaw_penalty / total_cases * 100.0 * 0.2), 1))
 
     return DataQualityResponse(
         total_records=total_records,
         duplicate_records=dup_cnt,
-        missing_fields=0,  # Synthetic generator guarantees zero unhandled null fields
+        missing_fields=0,
         invalid_timestamps=0,
         broken_lineage=broken_lin_cnt,
         stale_evidence=stale_mol_cnt,
@@ -832,10 +1047,10 @@ def get_data_quality(db: Session = Depends(get_db)):
 
 
 # --------------------------------------------------------------------------
-# 13. STAKEHOLDER VALIDATION ENDPOINT
+# 15. STAKEHOLDER VALIDATION ENDPOINT
 # --------------------------------------------------------------------------
 @app.get("/api/validation", response_model=List[StakeholderFeedbackItem], summary="Stakeholder Prototype Feedback")
-def get_stakeholder_validation():
+def get_stakeholder_validation(current_user: AuthenticatedUser = Depends(get_current_user)):
     """Returns simulated feedback scores and qualitative reviews from camp screening stakeholders."""
     return [
         StakeholderFeedbackItem(

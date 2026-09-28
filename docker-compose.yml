@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: eyesync-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - EYESYNC_JWT_SECRET=${JWT_SECRET:-eyesync-screening-camp-review2-jwt-token-secret-2026}
+      - EYESYNC_TOKEN_EXPIRE_MINUTES=${TOKEN_EXPIRE_MINUTES:-480}
+      - EYESYNC_DEMO_PASSWORD=${DEMO_PASSWORD:-EyeSync@2026!}
+    volumes:
+      - eyesync_data:/app/backend
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: eyesync-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  eyesync_data:

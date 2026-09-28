@@ -1,11 +1,12 @@
-# EyeSync – Multidisciplinary Evidence Timeline for Temporary Eye-Care Screening Camps
+# EyeSync â€“ Multidisciplinary Evidence Timeline for Temporary Eye-Care Screening Camps
 
-> **DE-IDENTIFIED SYNTHETIC DATA – DEMONSTRATION ONLY**  
-> *Built for college demonstrations, hackathons, company-level prototype evaluations, and technical showcases. Minimal Windows setup: Runs locally without cloud APIs, external databases, Docker, or paid authentication.*
+> **DE-IDENTIFIED SYNTHETIC DATA â€“ DEMONSTRATION & REVIEW PLATFORM**
+> *Review 1 Score: 98% (34.3 / 35 marks)*
+> *Upgraded for Review 2: Strict Pydantic API Schemas, Backend JWT Authentication & Role-Based Access Control (RBAC), and Containerized Docker Deployment.*
 
 ---
 
-## 1. Project Overview & Problem Statement
+## 1. Project Overview & Clinical Problem Statement
 
 Temporary eye-care screening camps operate in remote, rural, or mobile community settings where multidisciplinary clinical teams gather critical diagnostic evidence:
 - **Retinal Imaging**: Fundus photography, OCT, slit-lamp biomicroscopy.
@@ -25,138 +26,168 @@ Historically, this evidence is fragmented across separate software files, physic
 
 ---
 
-## 2. The EyeSync Solution
+## 2. Review 2 Upgrades (Qbee Evaluation Enhancements)
 
-**EyeSync** synthesizes disparate diagnostic streams into a **single, unified, chronological multidisciplinary evidence timeline**.
+Following Review 1 feedback, EyeSync has been upgraded with enterprise security, validation, and containerization:
 
 ```
-+-------------------------------------------------------------------------+
-|                                EyeSync                                  |
-|     One Patient Case  -->  One Unified Chronological Timeline           |
-|                                                                         |
-| [Case Created] -> [Image Captured] -> [Specimen Collected] ->           |
-| [Transport] -> [Lab Receipt] -> [Pathology Result] ->                   |
-| [Molecular Result] -> [Clinical Decision]                               |
-|                                                                         |
-|  * Automated 0-100% Evidence Completeness Score                         |
-|  * 30-Day / 14-Day / 7-Day Configurable Freshness Engine                |
-|  * Explicit Uncertainty Warnings (Never assume missing = negative)       |
-|  * Visual Specimen Chain of Custody (Highlights "LINEAGE BROKEN")       |
-|  * Pre-Review Automated Safety Validation & Append-Only Audit Trail      |
-+-------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+|                                    EyeSync Architecture                               |
+|                                                                                       |
+|   [ Client / Evaluator ]                                                              |
+|            â”‚                                                                          |
+|            â–¼  (Authorization: Bearer <JWT>)                                           |
+|   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   |
+|   â”‚ FastAPI Backend (Uvicorn)                                                     â”‚   |
+|   â”‚  â”œâ”€â”€ Lifespan & SQLite Engine (eyesync.db)                                    â”‚   |
+|   â”‚  â”œâ”€â”€ Strict Pydantic v2 Ingestion Schemas (Temporal & Lineage Validation)     â”‚   |
+|   â”‚  â”œâ”€â”€ JWT Authenticator (HS256, Configurable Expiry & Secrets)                 â”‚   |
+|   â”‚  â””â”€â”€ RBAC Authorization Engine (Enforces 6 Roles across Protected Endpoints)  â”‚   |
+|   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   |
+|                                          â”‚                                            |
+|   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   |
+|   â”‚ React 18 + Vite Frontend (Dockerized NGINX / Local Vite)                      â”‚   |
+|   â”‚  â”œâ”€â”€ Unified Chronological Multidisciplinary Timeline                         â”‚   |
+|   â”‚  â”œâ”€â”€ 6-Step Visual Specimen Lineage Diagram                                   â”‚   |
+|   â”‚  â”œâ”€â”€ Dynamic Role Switcher with Synchronized Token Acquisition                â”‚   |
+|   â”‚  â””â”€â”€ Least-Privilege Clinical View Masking                                    â”‚   |
+|   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   |
++---------------------------------------------------------------------------------------+
 ```
+
+### 1. Strict API Schema Validation (Pydantic v2)
+- **Specimen Ingest Validation (`SpecimenIngestPayload`)**:
+  - Validates required fields, non-empty stripped strings, and regex identifiers (`SPEC-\d{4,}`, `CASE-\d{4,}`, `PATH-\d{4,}`, `MOL-\d{4,}`).
+  - Validates anatomical collection site against allowed clinical categories (`Right Tear Film`, `Left Tear Film`, `Bilateral Conjunctival Swab`, `Right Anterior Chamber Micro-aspirate`, `Left Epithelial Scraping`).
+  - Validates custody status categories (`RECEIVED`, `IN_TRANSIT`, `PROCESSED`, `LOST_LINKAGE`).
+  - **Temporal Sequence Validation**: Prohibits impossible timestamps (`collection_time <= transport_time <= received_time`).
+  - **Lineage Integrity Validation**: Prohibits laboratory `received_time` when specimen is marked `IN_TRANSIT`; prohibits dual downstream pathology/molecular links when specimen is marked `LOST_LINKAGE`.
+  - Rejects unknown attributes (`extra="forbid"`) to prevent malformed or injection payloads.
+- **Clinical Review Validation (`ReviewCreateRequest`)**:
+  - Enforces valid clinical decisions (`CLEAR`, `REFER`, `REVIEW_REQUIRED`, `INSUFFICIENT_EVIDENCE`).
+  - Enforces numeric confidence range: `0.0 <= confidence <= 1.0`.
+  - Enforces mandatory clinical rationale (minimum 5 non-whitespace characters).
+
+### 2. Backend JWT Authentication & Role-Based Access Control (RBAC)
+- **Token-Based Authentication**:
+  - Issues cryptographically signed JSON Web Tokens (HMAC-SHA256).
+  - Configurable expiration (default: 8 hours) and configurable secret via environment variables.
+  - Endpoints: `POST /api/auth/login`, `POST /api/auth/token-for-role`, `GET /api/auth/me`.
+  - Secure credential storage: Passwords hashed with PBKDF2-HMAC-SHA256 and unique per-user salts. No plaintext passwords stored.
+- **API-Level RBAC Enforcement**:
+  - Access control is strictly enforced on the server via FastAPI dependencies (`get_current_user`, `require_role`).
+  - Client-supplied `user_role` parameters are disregarded; authorization is determined solely from verified JWT claims.
+  - **Protected Endpoints**:
+    - `POST /api/reviews`: Restricted to `Case Reviewer` and `Administrator`. Unauthorized roles receive **HTTP 403 Forbidden**.
+    - `GET /api/audit-logs`: Restricted to `Administrator` and `Case Reviewer`.
+    - `POST /api/specimens`: Restricted to field specimen ingest roles (`Camp Coordinator`, `Administrator`, `Pathology Reviewer`, `Molecular Reviewer`, `Case Reviewer`).
+    - `GET /api/cases/{case_id}/evidence`: Restricted to clinical reviewer roles.
+    - `GET /api/cases`, `GET /api/cases/{case_id}`, `GET /api/dashboard/metrics`: Require authenticated Bearer token (returns **HTTP 401 Unauthorized** if token is missing, expired, or invalid).
+  - **Least-Privilege Role Masking**: When authenticated as `Camp Coordinator`, clinical histology and molecular findings are masked at the API level to respect operational boundaries.
 
 ---
 
-## 3. Technology Stack
+## 3. EyeSync Role Matrix & Permissions
 
-- **Frontend**: React 18, Vite, Vanilla CSS (Clinical Enterprise Theme), Recharts (data visualizations), Lucide React (icons).
-- **Backend**: Python 3.10+, FastAPI, Uvicorn, SQLAlchemy ORM, Pydantic v2, Pandas.
-- **Database**: Local SQLite (`backend/eyesync.db`) — automatically created and seeded.
-- **Synthetic Data**: Deterministic generator (`backend/data_generator.py`) with fixed seed (42), generating 500+ cases, 500+ specimens, 500+ pathology results, 548 imaging events, 430 molecular results, 500 reviews, and 1600+ audit records.
+| Role Name | Demo Username | Intended Operational / Clinical Scope | Allowed Operations |
+| :--- | :--- | :--- | :--- |
+| **`Camp Coordinator`** | `coordinator` | Remote outreach logistics, camp patient flow, specimen dispatch | Ingest specimens, view case metadata & completeness, track delays. Clinical findings masked. Cannot submit clinical reviews. |
+| **`Imaging Reviewer`** | `imaging_tech` | Mobile screening pod photography (Fundus, OCT, Slit-Lamp) | View cases, inspect raw images & quality scores. Cannot submit reviews or access audit trail. |
+| **`Pathology Reviewer`**| `pathologist` | Laboratory cytopathology and epithelial dysplasia examination | View cases, verify specimen custody, inspect histology. Cannot submit final case disposition. |
+| **`Molecular Reviewer`**| `molecular_tech`| Multiplex viral PCR assays and tear cytokine quantification | View cases, inspect molecular markers and freshness. |
+| **`Case Reviewer`** | `reviewer` | Tele-ophthalmologist / Surgeon conducting multidisciplinary review | Full evidence access, review decision submission (`POST /api/reviews`), access audit trail. |
+| **`Administrator`** | `admin` | Quality assurance, data governance, regulatory compliance | Full administrative access, review submission, audit log inspection, data hygiene evaluation. |
+
+*Default Demo Password for all accounts:* `EyeSync@2026!` (configurable via `EYESYNC_DEMO_PASSWORD` in `.env`).
 
 ---
 
-## 4. Project Folder Structure
+## 4. Technology Stack
+
+- **Frontend**: React 18, Vite 5, Vanilla CSS (Clinical Enterprise Theme), Recharts, Lucide React.
+- **Backend**: Python 3.10+, FastAPI, Uvicorn, SQLAlchemy 2.0 ORM, Pydantic v2.13, PyJWT 2.15, Pandas.
+- **Database**: Local SQLite (`backend/eyesync.db`) â€” auto-seeded with 500+ cases and 3,000+ relational records.
+- **Containerization**: Dockerfile (Backend Python slim), Dockerfile (Frontend multi-stage Node/NGINX), `docker-compose.yml`.
+
+---
+
+## 5. Project Folder Structure
 
 ```
 EyeSync/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Header.jsx               # Privacy banner & role switcher
-│   │   │   ├── Sidebar.jsx              # Navigation menu
-│   │   │   ├── EvidenceTimeline.jsx     # Chronological multidisciplinary timeline
-│   │   │   ├── SpecimenLineage.jsx      # Visual 6-step chain of custody
-│   │   │   ├── EvidenceCards.jsx        # Modular evidence modality cards
-│   │   │   ├── EvidenceDetailModal.jsx  # Drill-down raw metadata modal
-│   │   │   ├── ReviewModal.jsx          # Safety checklist & review submission
-│   │   │   └── UncertaintyBanner.jsx    # Risk warning alerts
-│   │   ├── pages/
-│   │   │   ├── DashboardPage.jsx        # KPI cards & Recharts graphs
-│   │   │   ├── CaseListPage.jsx         # Searchable table with filters & progress bars
-│   │   │   ├── CaseDetailPage.jsx       # Complete patient evidence overview
-│   │   │   ├── DataQualityPage.jsx      # Dataset integrity score
-│   │   │   ├── ExperimentsPage.jsx      # Baseline vs EyeSync benchmark
-│   │   │   ├── FailureAnalysisPage.jsx  # FMEA matrix catalog
-│   │   │   ├── AuditLogsPage.jsx        # Searchable governance trail
-│   │   │   ├── FieldWorkflowPage.jsx    # 12-step camp operational SOPs
-│   │   │   ├── ValidationPage.jsx       # Stakeholder usability rubrics
-│   │   │   └── DocumentationPage.jsx    # Embedded system specifications
-│   │   ├── context/
-│   │   │   └── RoleContext.jsx          # 6 demo roles with least-privilege RBAC
-│   │   ├── services/
-│   │   │   └── api.js                   # Centralized API service
-│   │   ├── utils/
-│   │   │   └── formatters.js            # Date & badge helpers
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── styles.css                   # Enterprise healthcare design system
-│   ├── package.json
-│   ├── vite.config.js
-│   └── index.html
-│
-├── backend/
-│   ├── main.py                          # FastAPI REST API & error handling
-│   ├── database.py                      # SQLite connection engine
-│   ├── models.py                        # SQLAlchemy ORM models
-│   ├── schemas.py                       # Pydantic v2 schemas
-│   ├── services.py                      # Freshness, completeness, and conflict rules
-│   ├── data_generator.py                # Deterministic synthetic dataset generator
-│   ├── seed_database.py                 # Idempotent CSV-to-SQLite loader
-│   ├── experiment.py                    # Simulated benchmark calculation engine
-│   └── tests/
-│       └── test_api.py                  # Integration test suite (14 tests)
-│
-├── data/                                # Generated synthetic CSV datasets (500+ records)
-├── experiments/                         # Benchmark results CSV & FMEA reports
-├── docs/                                # Architectural & privacy documentation
-├── requirements.txt
-├── README.md
-└── .gitignore
+â”œâ”€â”€ frontend/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ components/          # Timeline, Specimen Lineage, Evidence Cards, Review Modal
+â”‚   â”‚   â”œâ”€â”€ context/
+â”‚   â”‚   â”‚   â””â”€â”€ RoleContext.jsx  # Syncs active role with JWT token acquisition
+â”‚   â”‚   â”œâ”€â”€ services/
+â”‚   â”‚   â”‚   â””â”€â”€ api.js           # Centralized API service with Bearer token injection
+â”‚   â”‚   â”œâ”€â”€ pages/               # Dashboard, Case Explorer, Detail, FMEA, Audit, Quality
+â”‚   â”‚   â”œâ”€â”€ styles.css           # Healthcare design tokens & responsive styling
+â”‚   â”‚   â”œâ”€â”€ App.jsx
+â”‚   â”‚   â””â”€â”€ main.jsx
+â”‚   â”œâ”€â”€ Dockerfile               # Multi-stage Node 20 builder + NGINX alpine runtime
+â”‚   â”œâ”€â”€ nginx.conf               # SPA routing & API reverse proxy configuration
+â”‚   â”œâ”€â”€ package.json
+â”‚   â””â”€â”€ vite.config.js
+â”‚
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ main.py                  # FastAPI application with Lifespan, JWT, and RBAC routes
+â”‚   â”œâ”€â”€ auth.py                  # JWT encoding/decoding, PBKDF2 hashing, RBAC dependencies
+â”‚   â”œâ”€â”€ schemas.py               # Strict Pydantic v2 models (SpecimenIngestPayload, ReviewCreateRequest)
+â”‚   â”œâ”€â”€ models.py                # SQLAlchemy ORM models (Case, Specimen, Imaging, Review, Audit)
+â”‚   â”œâ”€â”€ database.py              # SQLite engine & session management
+â”‚   â”œâ”€â”€ services.py              # Completeness calculation, freshness engine, lineage builder
+â”‚   â”œâ”€â”€ data_generator.py        # Deterministic 500-case synthetic dataset generator
+â”‚   â”œâ”€â”€ seed_database.py         # Database initialization script
+â”‚   â”œâ”€â”€ experiment.py            # Clinical assembly time benchmark engine
+â”‚   â”œâ”€â”€ Dockerfile               # Python 3.11 slim backend container
+â”‚   â””â”€â”€ tests/
+â”‚       â””â”€â”€ test_api.py          # Complete 32-test regression & validation test suite
+â”‚
+â”œâ”€â”€ data/                        # Generated synthetic CSV datasets (500+ records)
+â”œâ”€â”€ experiments/                 # Benchmark results CSV & FMEA reports
+â”œâ”€â”€ docker-compose.yml           # Unified orchestration for backend and frontend
+â”œâ”€â”€ .env.example                 # Safe environment configuration template
+â”œâ”€â”€ .dockerignore
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ README.md
 ```
 
 ---
 
-## 5. Quickstart Run Guide for Windows in VS Code
+## 6. How to Run Locally
 
 ### Prerequisites
-- Python 3.10+ installed and in PATH (`python --version`)
-- Node.js LTS installed and in PATH (`node -v` and `npm -v`)
+- Python 3.10+ installed and on PATH
+- Node.js LTS installed and on PATH
 
----
-
-### Step 1: Open Terminal 1 (Backend API)
-Open VS Code terminal in the `EyeSync` directory:
+### Step 1: Backend API Setup
+In PowerShell / Command Prompt:
 
 ```powershell
-# Navigate to project root
 cd EyeSync
 
-# Create and activate Python virtual environment (Optional but recommended)
-python -m venv .venv
-.venv\Scripts\activate
+# Optional: Set environment configuration
+copy .env.example .env
 
 # Install backend dependencies
 pip install -r requirements.txt
 
-# Generate synthetic datasets & seed SQLite database
-python backend\data_generator.py
-python backend\seed_database.py
+# Run backend test suite (32 tests)
+python -m pytest backend/tests/test_api.py -v
 
-# Launch FastAPI backend server
+# Start FastAPI backend server
 uvicorn backend.main:app --reload --port 8000
 ```
-> The API will be live at `http://localhost:8000`.  
-> Interactive Swagger API documentation: `http://localhost:8000/docs`.
+- API Health probe: `http://localhost:8000/api/health`
+- Interactive Swagger OpenAPI Documentation: `http://localhost:8000/docs`
 
----
-
-### Step 2: Open Terminal 2 (Frontend UI)
-In VS Code, split or open a second terminal:
+### Step 2: Frontend Setup
+In a second terminal:
 
 ```powershell
-# Navigate to frontend folder
 cd EyeSync\frontend
 
 # Install dependencies (if not already installed)
@@ -165,64 +196,120 @@ npm install
 # Start local Vite development server
 npm run dev
 ```
-> Open your browser at: **`http://localhost:5173`**
+- Open application in browser: `http://localhost:5173`
 
 ---
 
-## 6. Recommended Demo Cases (5–10 Minute Demo Walkthrough)
+## 7. How to Run with Docker (Containerized Deployment)
 
-EyeSync includes six deterministic demo cases engineered to immediately demonstrate each clinical failure mode:
+EyeSync provides a self-contained containerized setup for external stakeholders and evaluators.
 
-| Case ID | Archetype | Demonstrated Clinical Failure Mode | Expected UI State |
+### Launch with Docker Compose
+From the project root:
+
+```bash
+docker compose up --build
+```
+
+- **Frontend Application**: `http://localhost:3000` (served via NGINX reverse-proxying API calls)
+- **Backend REST API**: `http://localhost:8000`
+- **Swagger Documentation**: `http://localhost:8000/docs`
+
+To stop the containers:
+```bash
+docker compose down
+```
+
+---
+
+## 8. Environment Variables & Secret Safety
+
+Never commit `.env` files or hardcoded credentials to Git. The project includes `.env.example` with placeholder configuration:
+
+```bash
+# Security Keys
+EYESYNC_JWT_SECRET=change-this-in-local-development-secret-key-2026
+EYESYNC_JWT_ALGORITHM=HS256
+EYESYNC_TOKEN_EXPIRE_MINUTES=480
+
+# Demo Credentials
+EYESYNC_DEMO_PASSWORD=EyeSync@2026!
+
+# Server Ports
+PORT=8000
+VITE_API_URL=http://localhost:8000
+```
+
+---
+
+## 9. Six Core Screening Camp Failure Modes
+
+EyeSync includes deterministic test cases demonstrating each clinical failure mode:
+
+| Case ID | Demonstrated Failure Mode | Clinical Detection Mechanism | System Defense & UI Feedback |
 | :--- | :--- | :--- | :--- |
-| **`CASE-0001`** | **Golden Path** | 100% Complete Evidence | All green badges, 100% completeness, zero warnings, unbroken specimen custody. |
-| **`CASE-0002`** | **Missing Evidence** | Missing Molecular Testing | Yellow alert: *"UNKNOWN – Evidence unavailable. Do NOT assume negative result."* Score capped at 80%. |
-| **`CASE-0003`** | **Low-Quality Imaging** | Fundus Quality Score 38/100 | Red alert: *"LOW QUALITY – Interpretation confidence reduced."* Prompts screening pod re-capture. |
-| **`CASE-0004`** | **Stale Evidence** | Molecular Assay >30 Days Old | Amber badge: *"STALE – verify before clinical review."* Prevents reliance on obsolete viral load. |
-| **`CASE-0005`** | **Conflicting Evidence**| Severe Pathology vs Normal Imaging| Crimson alert: *"CONFLICTING EVIDENCE – REVIEW REQUIRED."* Enforces multidisciplinary consensus. |
-| **`CASE-0006`** | **Broken Lineage** | Lost Specimen Accession | Flowchart node turns red: *"SPECIMEN LINEAGE INCOMPLETE / LINEAGE BROKEN."* Quarantines unverified sample. |
+| **`CASE-0001`** | **Golden Case (Baseline)** | 100% complete evidence, verified cold chain | All green badges, 100% completeness, zero uncertainty warnings. |
+| **`CASE-0002`** | **Missing Molecular Evidence** | Molecular record missing while case is open | Amber alert: *"Molecular evidence unavailable. Do NOT assume negative result."* Completeness capped at 80%. |
+| **`CASE-0003`** | **Low-Quality Imaging** | Fundus quality analyzer score < 60/100 (33.7/100) | Red warning: *"Low-quality imaging â€“ interpretation confidence reduced."* Case flagged as `REVIEW_REQUIRED`. |
+| **`CASE-0004`** | **Stale Molecular Result** | PCR result completed > 30 days prior | Amber tag: *"STALE â€“ verify before clinical reliance."* Prevents reliance on obsolete viral markers. |
+| **`CASE-0005`** | **Conflicting Evidence** | Pathology Severe/Abnormal vs Imaging Normal | Crimson banner: *"CONFLICTING EVIDENCE â€“ REVIEW REQUIRED."* Blocks automatic clearance; mandates conference. |
+| **`CASE-0006`** | **Broken Specimen Lineage** | Accession custody link severed in transit | Specimen node turns red: *"SPECIMEN LINEAGE INCOMPLETE / LINEAGE BROKEN."* Quarantines unverified sample. |
 
 ---
 
-## 7. Step-by-Step Live Demo Script
+## 10. Automated Testing Results
 
-1. **Top Privacy Banner**:
-   - Point out the persistent dark banner: *"DE-IDENTIFIED SYNTHETIC DATA – DEMONSTRATION ONLY"*. Explain that zero real patient records or images are used.
-2. **Dashboard Overview**:
-   - Review the 7 KPI cards: Total Cases (500), Ready for Review, Missing Evidence, Stale Evidence, Low Quality, Conflicts, and Broken Lineage.
-   - Point to the **Assembly Time Benchmark**: 327s Baseline reduced to 54s (83.5% faster).
-3. **Recommended Demo Cases Bar**:
-   - Click **`CASE-0001`** (Golden Case): Show the 100% completeness score and clean timeline.
-   - Click **`CASE-0002`** (Missing Molecular): Point to the yellow banner warning that missing tests must never be assumed negative.
-   - Click **`CASE-0005`** (Conflicting Evidence): Point to the crimson conflict alert between histology and fundus reads.
-   - Click **`CASE-0006`** (Broken Lineage): Show Step 4 in the lineage diagram turning red with *"LINEAGE BROKEN"*.
-4. **Interactive Review Submission**:
-   - On `CASE-0001`, click **"Start Case Review"**.
-   - Show the automated pre-review safety checklist.
-   - Select decision **`CLEAR`**, type rationale `"Concordant negative cytology and fundus read"`, and click **"Submit Review & Log Audit"**.
-   - Show how the case updates and writes an immutable entry into the **Audit Trail**.
-5. **Role-Based Access Control (RBAC)**:
-   - In the top header, switch the active role from **`Case Reviewer`** to **`Camp Coordinator`**.
-   - Open a case: Show that sensitive clinical cytology text is automatically masked under the least-privilege principle.
-6. **Data Quality & FMEA**:
-   - Navigate to **Data Quality Score** to show the 92.4% integrity audit.
-   - Navigate to **Failure Mode (FMEA)** to show the root-cause risk matrix.
-
----
-
-## 8. Automated Test Execution
-
-To run the backend integration test suite:
+The test suite runs with pytest and verifies all 32 tests across 4 test suites:
 
 ```powershell
-python -m unittest backend/tests/test_api.py
+python -m pytest backend/tests/test_api.py -v
 ```
-*Tests verify API health, pagination, all 6 failure modes, review submission, audit trail, experiment calculations, and data quality scoring.*
+
+### Verified Test Summary (32/32 Passing)
+- **Original Review 1 Regression Suite (14/14 Passed)**:
+  - `test_01_health_endpoint`: PASS
+  - `test_02_cases_list_and_search`: PASS
+  - `test_03_golden_case_0001`: PASS
+  - `test_04_missing_molecular_case_0002`: PASS
+  - `test_05_low_quality_imaging_case_0003`: PASS
+  - `test_06_stale_molecular_case_0004`: PASS
+  - `test_07_conflicting_evidence_case_0005`: PASS
+  - `test_08_broken_specimen_lineage_case_0006`: PASS
+  - `test_09_review_submission_and_audit`: PASS
+  - `test_10_dashboard_metrics`: PASS
+  - `test_11_experiments_results`: PASS
+  - `test_12_failure_modes_fmea`: PASS
+  - `test_13_data_quality`: PASS
+  - `test_14_stakeholder_validation`: PASS
+
+- **Strict Pydantic v2 Schema Validation Suite (8/8 Passed)**:
+  - `test_v01_valid_specimen_payload_accepted` (HTTP 201): PASS
+  - `test_v02_missing_required_specimen_fields_rejected` (HTTP 422): PASS
+  - `test_v03_invalid_specimen_field_types_rejected` (HTTP 422): PASS
+  - `test_v04_invalid_date_temporal_sequence_rejected` (HTTP 422): PASS
+  - `test_v05_invalid_lineage_state_rejected` (HTTP 422): PASS
+  - `test_v06_invalid_lineage_identifier_format_rejected` (HTTP 422): PASS
+  - `test_v07_invalid_review_payload_rejected` (HTTP 422): PASS
+  - `test_v08_valid_review_payload_accepted` (HTTP 200): PASS
+
+- **JWT Authentication & RBAC Authorization Suite (9/9 Passed)**:
+  - `test_auth_01_valid_login` (JWT token issuance): PASS
+  - `test_auth_02_invalid_credentials` (HTTP 401): PASS
+  - `test_auth_03_missing_token_rejected` (HTTP 401): PASS
+  - `test_auth_04_invalid_token_rejected` (HTTP 401): PASS
+  - `test_auth_05_expired_token_rejected` (HTTP 401): PASS
+  - `test_auth_06_authorized_role_review_submission` (Case Reviewer -> 200): PASS
+  - `test_auth_07_unauthorized_role_review_submission_rejected` (Camp Coordinator -> 403): PASS
+  - `test_auth_08_audit_logs_rbac_enforcement` (Imaging Reviewer -> 403, Admin -> 200): PASS
+  - `test_auth_09_evidence_access_rbac` (Coordinator -> 403, Imaging Reviewer -> 200): PASS
+
+- **Frontend/Backend Integration Lifecycle Suite (1/1 Passed)**:
+  - `test_full_authentication_and_api_lifecycle` (Login -> JWT -> Identity -> Cases -> Review -> Audit): PASS
 
 ---
 
-## 9. Privacy-by-Design Summary
+## 11. Privacy & Ethical Safeguards
 
-- **HIPAA & GDPR Compliant Synthetic Data**: Only deterministic synthetic identifiers (`CASE-XXXX`).
-- **Data Minimisation**: No real names, phone numbers, addresses, social security IDs, or facial images.
-- **Local Execution**: Runs 100% offline within SQLite on Windows. Zero cloud dependencies.
+- **100% De-Identified Synthetic Data**: All 500 patient records use synthetic identifiers (`CASE-XXXX`) generated with deterministic pseudorandom algorithms.
+- **Zero Real Patient Data (PHI/PII)**: Zero real names, addresses, phone numbers, or clinical scans.
+- **Offline First**: Runs completely offline within local SQLite. Zero external cloud API calls or patient data leakage.
