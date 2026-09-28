@@ -50,7 +50,7 @@ Review 2 addresses these requirements through:
 ```text
                     +----------------------+
                     |      EyeSync UI      |
-                    |   React + Vite       |
+                    |     React + Vite     |
                     +----------+-----------+
                                |
                                v
