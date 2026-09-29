@@ -218,6 +218,8 @@ class SpecimenIngestPayload(BaseModel):
     @model_validator(mode="after")
     def validate_lineage_and_chronology(self) -> "SpecimenIngestPayload":
         # 1. Temporal sequence checks
+        # Physical causality invariant: Specimen must follow Field Collection -> Cold-Chain Transport -> Lab Intake.
+        # An accession cannot arrive before it was dispatched, nor dispatched before it was harvested.
         if self.transport_time is not None:
             if self.transport_time < self.collection_time:
                 raise ValueError(
@@ -235,17 +237,22 @@ class SpecimenIngestPayload(BaseModel):
                 )
 
         # 2. Lineage state coherence checks
+        # Custody state invariant: Accessions marked IN_TRANSIT are actively in courier transit
+        # and cannot have a confirmed laboratory intake receipt timestamp.
         if self.processing_status == "IN_TRANSIT" and self.received_time is not None:
             raise ValueError(
                 "Invalid lineage state: Specimen marked 'IN_TRANSIT' cannot have a laboratory received_time recorded"
             )
 
+        # Severed custody invariant: A specimen flagged as LOST_LINKAGE represents an interrupted
+        # chain of custody (e.g. smudged 2D barcode, broken tube) and cannot claim dual valid downstream runs.
         if self.processing_status == "LOST_LINKAGE":
             if self.linked_pathology_id is not None and self.linked_molecular_id is not None:
                 raise ValueError(
                     "Invalid lineage relationship: Specimen with 'LOST_LINKAGE' cannot possess valid downstream diagnostic linkages"
                 )
 
+        # Verification invariant: Specimens claiming PROCESSED status must have reached the central lab.
         if self.processing_status == "PROCESSED" and self.received_time is None:
             raise ValueError(
                 "Invalid custody state: Specimen marked 'PROCESSED' must have a recorded laboratory received_time"

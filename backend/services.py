@@ -53,17 +53,22 @@ def calculate_completeness(
 ) -> EvidenceCompletenessBreakdown:
     """
     Calculates 0-100 evidence completeness score with exact itemized points:
-    - Imaging available = 30 points
-    - Pathology available = 30 points
-    - Molecular available = 20 points
-    - Specimen lineage complete = 10 points
-    - Review decision available = 10 points
+    - Imaging available = 30 points (Primary visual diagnostic modality)
+    - Pathology available = 30 points (Histological / cytologic confirmation)
+    - Molecular available = 20 points (Confirmatory viral PCR / biomarker panel)
+    - Specimen lineage complete = 10 points (Verified chain of custody)
+    - Review decision available = 10 points (Final clinical triage disposition)
     """
+    # Evidence scoring model: In temporary screening camps, visual imaging and tissue
+    # pathology carry primary diagnostic weight (60% combined). Confirmatory PCR assays
+    # provide 20%, while unbroken chain of custody and signed clinical reviews provide
+    # the final 20% to reach a 100% comprehensive record.
     items: List[CompletenessItem] = []
     missing_items: List[str] = []
     total_score = 0.0
 
     # 1. Imaging Available (30 pts)
+    # Evaluates presence of readable capture (modality cannot be marked MISSING)
     has_imaging = len(imaging_list) > 0 and any(img.quality_status != "MISSING" for img in imaging_list)
     pts_img = 30.0 if has_imaging else 0.0
     total_score += pts_img
@@ -212,6 +217,8 @@ def build_specimen_lineage(
         ))
 
     # Step 4: Laboratory Receipt
+    # Specimen custody check: If lost in transit or barcoding severed,
+    # the failure cascades downstream to invalidate pathology and molecular steps.
     is_lost = spec.processing_status == "LOST_LINKAGE"
     if spec.received_time and not is_lost:
         steps.append(SpecimenLineageStep(
@@ -224,6 +231,7 @@ def build_specimen_lineage(
             is_broken=False
         ))
     elif is_lost:
+        # Interrupted chain-of-custody: Sample cannot be authenticated.
         steps.append(SpecimenLineageStep(
             step_number=4,
             step_name="Laboratory Receipt",
@@ -383,7 +391,10 @@ def detect_uncertainties_and_conflicts(
             ))
 
     # 5. Conflicting Evidence
-    # Pathology Abnormal with Moderate/Severe finding VS Imaging read as Normal/Clear
+    # Heuristic: Detect biological discordance across diagnostic modalities.
+    # Case A: Histology demonstrates dysplasia/necrosis while imaging read claims normal retina.
+    # Case B: Fundus/OCT shows distinct lesions while cytology scrape failed to harvest abnormal cells.
+    # Both states mandate case conference before clinical clearance.
     if pathology_list and imaging_list:
         path = pathology_list[0]
         img = imaging_list[0]

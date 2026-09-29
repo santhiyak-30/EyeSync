@@ -105,6 +105,8 @@ DEMO_PASSWORD = os.getenv("EYESYNC_DEMO_PASSWORD", "EyeSync@2026!")
 
 
 # Secure PBKDF2 Password Hashing
+# Uses PBKDF2-HMAC-SHA256 with a per-user salt and 100,000 iterations.
+# A cryptographically secure per-user salt prevents rainbow table attacks and slows GPU brute-forcing.
 def hash_password(password: str, salt: Optional[str] = None) -> str:
     if not salt:
         salt = secrets.token_hex(16)
@@ -118,6 +120,7 @@ def hash_password(password: str, salt: Optional[str] = None) -> str:
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
+    """Verifies plain password against hashed value using constant-time comparison."""
     try:
         salt, key_hex = hashed_password.split("$", 1)
         test_key = hashlib.pbkdf2_hmac(
@@ -126,6 +129,7 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
             salt.encode("utf-8"),
             100000
         )
+        # Constant-time comparison prevents side-channel timing analysis
         return hmac.compare_digest(test_key.hex(), key_hex)
     except Exception:
         return False
